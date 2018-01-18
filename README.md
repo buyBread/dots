@@ -8,5 +8,5 @@ my `~/` folder
 - termite 
 ## more & screenshot
 the font is `gohufont`, `fontawesome` is currently unused because i dont use a bar currently  
-[!screenshot](http://i68.tinypic.com/65rd6v.png)
+![screenshot](http://i68.tinypic.com/65rd6v.png)
 
