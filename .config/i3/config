@@ -16,9 +16,9 @@ bindsym $mod+Return exec termite
 bindsym $mod+d exec dmenu_run
 
 # - wallpaper -
-exec_always feh --bg-scale ~/.config/i3/wall.png
-# exec_always feh --bg-scale ~/.config/i3/wall.jpg
-# exec_always feh --bg-scale ~/.config/i3/wall.jpeg
+#exec_always feh --bg-center ~/.config/i3/wallred.png
+exec_always feh --bg-center ~/.config/i3/wallred.jpg
+# exec_always feh --bg-center ~/.config/i3/wallred.jpeg
 
 # - reload the configuration file -
 bindsym $mod+Shift+c reload
@@ -77,7 +77,7 @@ bindsym $mod+Shift+q kill
 floating_modifier $mod
 
 # - new window(border) pixel size
-new_window pixel 10
+new_window pixel 5
 
 # - pop-up windows -
 for_window [window_role="(?i)pop-up"] floating enable
@@ -89,7 +89,12 @@ hide_edge_borders both
 # ============================================================================= #
 
 
-# - bar (was 2 lazy to set up an actual bar) -
+# - bar -
+
+# tint2
+exec --no-startup-id tint2
+
+# i3bar (i3status, i3blocks)
 #bar {
 #        status_command i3status
 #    position top
@@ -111,19 +116,54 @@ hide_edge_borders both
 # - workspace stuff -
 
 # - workspaces -
+#    internet
+#    anything
+#    code
+#    files
+#    gimp
+#    chat
 set $ws1 "" 
 set $ws2 "" 
-set $ws3 "" 
+set $ws3 ""
+set $ws4 ""
+set $ws5 ""
+set $ws10 ""
 
 # - switch to workspace -
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+0 workspace $ws10
+
 
 # - move focused container to workspace -
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
 bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+
+# ============================================================================= #
+
+
+# - floating windows -
+for_window [class="Termite"] floating enable
+
+
+# ============================================================================= #
+
+
+# - default workspaces -
+
+assign [class="Firefox"] $ws1
+assign [class="Gedit"] $ws3
+assign [class="Nautilus"] $ws4
+assign [class="Gimp"] $ws5
+assign [class="discord"] $ws10
 
 
 # ============================================================================= #
@@ -134,10 +174,10 @@ bindsym $mod+Shift+3 move container to workspace $ws3
 # - resize window (you can also use the mouse for that) -
 mode "resize" {
         # - these bindings trigger as soon as you enter the resize mode -
-        bindsym Left resize shrink width 2 px or 2 ppt
-        bindsym Down resize grow height 2 px or 2 ppt
-        bindsym Up resize shrink height 2 px or 2 ppt
-        bindsym Right resize grow width 2 px or 2 ppt
+        bindsym Left resize shrink width 1 px or 1 ppt
+        bindsym Down resize grow height 1 px or 1 ppt
+        bindsym Up resize shrink height 1 px or 1 ppt
+        bindsym Right resize grow width 1 px or 1 ppt
 
         # - back to normal: "Enter" or "Escape" -
         bindsym Return mode "default"
@@ -153,8 +193,8 @@ bindsym $mod+r mode "resize"
 
 # - colors -
 
-set $bg-color 	         #282828
-set $inactive-bg-color   #282828
+set $bg-color 	         #ffffff
+set $inactive-bg-color   #ffffff
 set $text-color          #f04c72
 set $inactive-text-color #000000
 set $urgent-bg-color     #282828
