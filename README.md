@@ -6,6 +6,7 @@ my `~/` folder
 - neofetch
 - zsh
 - termite 
+- tint2
 ## screenshot 
-![screenshot](http://i68.tinypic.com/65rd6v.png)
+![screenshot](http://i67.tinypic.com/2qwzq06.png)
 
