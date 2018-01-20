@@ -13,7 +13,7 @@ font pango:GohuFont 8
 bindsym $mod+Return exec termite
 
 # - dmenu -
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec dmenu_run -sb white -sf black -nf white
 
 # - wallpaper -
 #exec_always feh --bg-center ~/.config/i3/wallred.png
@@ -28,9 +28,11 @@ bindsym $mod+Shift+r restart
 
 # - exit i3 (logout) -
 bindsym $mod+Shift+e exec "i3-nagbar -f GohuFont -t warning -m 'exit your i3 session?' -b 'yes' 'i3-msg exit'"
+ 
 
 
 # ============================================================================= #
+
 
 
 # - container related things -
@@ -92,7 +94,9 @@ hide_edge_borders both
 # - bar -
 
 # tint2
-exec --no-startup-id tint2
+exec --no-startup-id tint2 
+exec --no-startup-id nm-applet  
+exec --no-startup-id volti 
 
 # i3bar (i3status, i3blocks)
 #bar {
@@ -116,25 +120,19 @@ exec --no-startup-id tint2
 # - workspace stuff -
 
 # - workspaces -
-#    internet
-#    anything
-#    code
-#    files
-#    gimp
-#    chat
-set $ws1 "" 
-set $ws2 "" 
-set $ws3 ""
-set $ws4 ""
-set $ws5 ""
-set $ws10 ""
+set $ws1 "◾◽◽◽◽◽" 
+set $ws2 "◽◾◽◽◽◽" 
+set $ws3 "◽◽◾◽◽◽"
+set $ws8 "◽◽◽◾◽◽"
+set $ws9 "◽◽◽◽◾◽"
+set $ws10 "◽◽◽◽◽◾"
 
 # - switch to workspace -
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace $ws4
-bindsym $mod+5 workspace $ws5
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 
 
@@ -142,28 +140,29 @@ bindsym $mod+0 workspace $ws10
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
 bindsym $mod+Shift+3 move container to workspace $ws3
-bindsym $mod+Shift+4 move container to workspace $ws4
-bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 
 # ============================================================================= #
 
 
-# - floating windows -
-for_window [class="Termite"] floating enable
+# - floating windows - 
+#for_window [class="Termite"] floating enable
 
 
 # ============================================================================= #
 
 
+
 # - default workspaces -
 
-assign [class="Firefox"] $ws1
-assign [class="Gedit"] $ws3
-assign [class="Nautilus"] $ws4
-assign [class="Gimp"] $ws5
-assign [class="discord"] $ws10
+#assign [class="Firefox"] $ws1
+#assign [class="Gedit"] $ws3
+#assign [class="Nautilus"] $ws8
+#assign [class="Gimp"] $ws9
+#assign [class="discord"] $ws10
 
 
 # ============================================================================= #
@@ -224,9 +223,9 @@ exec_always gsettings set org.nemo.desktop show-desktop-icons false
 # - gaps -
 
 # - gaps inner -
-gaps inner 50
+gaps inner 30
 # - gaps outer -
-gaps outer 70
+gaps outer 35
 
 # - smart gaps -
 smart_gaps on
