@@ -87,6 +87,10 @@ for_window [window_role="(?i)pop-up"] floating enable
 # - edge borders -
 hide_edge_borders both
 
+# - termite title -
+for_window [class="Termite" ] border normal 0
+for_window [class=".*" ] title_format "<span font='GohuFont 8'> $ %title</span>"
+
 
 # ============================================================================= #
 
@@ -95,8 +99,8 @@ hide_edge_borders both
 
 # tint2
 exec --no-startup-id tint2 
-exec --no-startup-id nm-applet  
-exec --no-startup-id volti 
+exec --no-startup-id nm-applet &
+exec --no-startup-id volti &
 
 # i3bar (i3status, i3blocks)
 #bar {
@@ -120,12 +124,12 @@ exec --no-startup-id volti
 # - workspace stuff -
 
 # - workspaces -
-set $ws1 "◾◽◽◽◽◽" 
-set $ws2 "◽◾◽◽◽◽" 
-set $ws3 "◽◽◾◽◽◽"
-set $ws8 "◽◽◽◾◽◽"
-set $ws9 "◽◽◽◽◾◽"
-set $ws10 "◽◽◽◽◽◾"
+set $ws1 " $ ∘ ∘ ∘ ∘ ∘ " 
+set $ws2 " ∘ $ ∘ ∘ ∘ ∘ " 
+set $ws3 " ∘ ∘ $ ∘ ∘ ∘ "
+set $ws8 " ∘ ∘ ∘ $ ∘ ∘ "
+set $ws9 " ∘ ∘ ∘ ∘ $ ∘ "
+set $ws10 " ∘ ∘ ∘ ∘ ∘ $ "
 
 # - switch to workspace -
 bindsym $mod+1 workspace $ws1
@@ -149,7 +153,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 
 # - floating windows - 
-#for_window [class="Termite"] floating enable
+for_window [class="Termite"] floating enable
 
 
 # ============================================================================= #
@@ -192,9 +196,9 @@ bindsym $mod+r mode "resize"
 
 # - colors -
 
-set $bg-color 	         #ffffff
-set $inactive-bg-color   #ffffff
-set $text-color          #f04c72
+set $bg-color 	         #f04c72
+set $inactive-bg-color   #f04c72
+set $text-color          #000000
 set $inactive-text-color #000000
 set $urgent-bg-color     #282828
 set $indicator-color     #282828
