@@ -9,5 +9,5 @@ my `~/` folder
 - tint2
 - feh
 ## screenshot 
-![screenshot](http://i67.tinypic.com/2qwzq06.png)
+![screenshot](https://raw.githubusercontent.com/buyBread/dots/master/screenshots/2018-01-21-200427_1366x768_scrot.png)
 
