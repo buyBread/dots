@@ -7,6 +7,7 @@ my `~/` folder
 - zsh
 - termite 
 - tint2
+- feh
 ## screenshot 
 ![screenshot](http://i67.tinypic.com/2qwzq06.png)
 
