@@ -225,9 +225,9 @@ exec_always gsettings set org.nemo.desktop show-desktop-icons false
 # - gaps -
 
 # - gaps inner -
-gaps inner 30
+gaps inner 20
 # - gaps outer -
-gaps outer 35
+gaps outer 30
 
 # - smart gaps -
 smart_gaps on
