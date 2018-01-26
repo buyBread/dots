@@ -194,12 +194,12 @@ bindsym $mod+r mode "resize"
 
 # - colors -
 
-set $bg-color 	         #f04c72
-set $inactive-bg-color   #f04c72
+set $bg-color 	          #A6C0B8
+set $inactive-bg-color   #282828
 set $text-color          #000000
-set $inactive-text-color #000000
-set $urgent-bg-color     #282828
-set $indicator-color     #282828
+set $inactive-text-color #b1b1b1
+set $urgent-bg-color     #A6C0B8
+set $indicator-color     #A6C0B8
 
 # - window colors -
 #                      - border -           - background -     - text -             - indicator -
