@@ -16,9 +16,7 @@ bindsym $mod+Return exec termite
 bindsym $mod+d exec dmenu_run -sb white -sf black -nf white
 
 # - wallpaper -
-#exec_always feh --bg-center ~/.config/i3/wallred.png
-exec_always feh --bg-center ~/.config/i3/wallred.jpg
-# exec_always feh --bg-center ~/.config/i3/wallred.jpeg
+exec_always feh --bg-fill ~/.config/i3/wall.jpg
 
 # - reload the configuration file -
 bindsym $mod+Shift+c reload
