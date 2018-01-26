@@ -1,5 +1,5 @@
 [options]
-#allow_bold = true
+allow_bold = false
 #audible_bell = false
 #clickable_url = true
 #dynamic_title = true
@@ -41,7 +41,7 @@ cursor_shape = ibeam
 [colors]
 # If both of these are unset, cursor falls back to the foreground color,
 # and cursor_foreground falls back to the background color.
-cursor = #a283ff
+cursor = #A6C0B8
 #cursor_foreground = #dcdccc
 
 foreground = b1b1b1
@@ -55,22 +55,22 @@ background = #282828
 highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
-color0 = #09050e
-color1 = #f04c72
-color2 = #f04c72
-color3 = #afbd70
-color4 = #5b75cd
-color5 = #a145ff
-color6 = #f04c72
+color0 = #100f12
+color1 = #A6C0B8
+color2 = #A6C0B8
+color3 = #6ea7bd
+color4 = #5ab9cc
+color5 = #8ab8de
+color6 = #A6C0B8
 color7 = #b1b1b1
-color8 = #0f070e
-color9 = #f04c72
-color10 = #84ff82
-color11 = #da9d82
-color12 = #f04c72
-color13 = #c396ff
-color14 = #f04c72
-color15 = #6e6478
+color8 = #07090f
+color9 = #A6C0B8
+color10 = #7fb6ff
+color11 = #81dbb7
+color12 = #A6C0B8
+color13 = #94cfff
+color14 = #A6C0B8
+color15 = #b1b1b1
 
 [hints]
 #font = Monospace 12
