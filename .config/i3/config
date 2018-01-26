@@ -77,7 +77,7 @@ bindsym $mod+Shift+q kill
 floating_modifier $mod
 
 # - new window(border) pixel size
-new_window pixel 5
+new_window pixel 6
 
 # - pop-up windows -
 for_window [window_role="(?i)pop-up"] floating enable
@@ -86,8 +86,8 @@ for_window [window_role="(?i)pop-up"] floating enable
 hide_edge_borders both
 
 # - termite title -
-for_window [class="Termite" ] border normal 0
-for_window [class=".*" ] title_format "<span font='GohuFont 8'> $ %title</span>"
+#for_window [class="Termite" ] border normal 0
+#for_window [class=".*" ] title_format "<span font='GohuFont 8'> ∘ %title</span>"
 
 
 # ============================================================================= #
