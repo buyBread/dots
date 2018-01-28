@@ -7,7 +7,7 @@ my `~/` folder
 - zsh
 - termite
 - tint2
-- feh
+- feh  
 `openbox`
 - openbox
 - tint2
