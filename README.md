@@ -1,15 +1,20 @@
 ## dots
 my `~/` folder
 ## req
+`i3`
 - i3-gaps
 - i3lock
-- neofetch
 - zsh
-- urxvt
 - termite
-- openbox
 - tint2
 - feh
-## screenshot 
-![screenshot](https://raw.githubusercontent.com/buyBread/dots/master/screenshots/2018-01-21-200427_1366x768_scrot.png)
+`openbox`
+- openbox
+- tint2
+- urxvt
+- zsh
+- feh
+## screenshots
+![i3screen](https://raw.githubusercontent.com/buyBread/dots/master/screenshots/Screenshot%20from%202018-01-27%2017-25-10.png)
+![obscreen](https://raw.githubusercontent.com/buyBread/dots/master/screenshots/2018-01-28-195341_1366x768_scrot.png)
 
