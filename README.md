@@ -8,6 +8,7 @@ my `~/` folder
 - termite
 - tint2
 - feh  
+
 `openbox`
 - openbox
 - tint2
