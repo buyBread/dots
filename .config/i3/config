@@ -122,12 +122,12 @@ exec --no-startup-id volti &
 # - workspace stuff -
 
 # - workspaces -
-set $ws1 " $ ∘ ∘ ∘ ∘ ∘ " 
-set $ws2 " ∘ $ ∘ ∘ ∘ ∘ " 
-set $ws3 " ∘ ∘ $ ∘ ∘ ∘ "
-set $ws8 " ∘ ∘ ∘ $ ∘ ∘ "
-set $ws9 " ∘ ∘ ∘ ∘ $ ∘ "
-set $ws10 " ∘ ∘ ∘ ∘ ∘ $ "
+set $ws1 "                                                                                                  $ ∘ ∘ ∘ ∘ ∘ " 
+set $ws2 "                                                                                                  ∘ $ ∘ ∘ ∘ ∘ " 
+set $ws3 "                                                                                                  ∘ ∘ $ ∘ ∘ ∘ "
+set $ws8 "                                                                                                  ∘ ∘ ∘ $ ∘ ∘ "
+set $ws9 "                                                                                                  ∘ ∘ ∘ ∘ $ ∘ "
+set $ws10 "                                                                                                  ∘ ∘ ∘ ∘ ∘ $ "
 
 # - switch to workspace -
 bindsym $mod+1 workspace $ws1
@@ -151,7 +151,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 
 # - floating windows - 
-for_window [class="Termite"] floating enable
+#for_window [class="Termite"] floating enable
 
 
 # ============================================================================= #
@@ -193,13 +193,14 @@ bindsym $mod+r mode "resize"
 
 
 # - colors -
+# - #282828 - (cool shade of gray)
 
-set $bg-color 	          #A6C0B8
-set $inactive-bg-color   #282828
+set $bg-color 	         #462D40
+set $inactive-bg-color   #462D40
 set $text-color          #000000
 set $inactive-text-color #b1b1b1
-set $urgent-bg-color     #A6C0B8
-set $indicator-color     #A6C0B8
+set $urgent-bg-color     #462D40
+set $indicator-color     #462D40
 
 # - window colors -
 #                      - border -           - background -     - text -             - indicator -
@@ -214,7 +215,7 @@ client.urgent 		$urgent-bg-color    $urgent-bg-color   $text-color 	    $indicat
 
 # - misc -
 
-# - nautilus fix (ubuntu) -
+# - nautilus fix -
 exec_always gsettings set org.gnome.desktop.background show-desktop-icons false
 exec_always gsettings set org.nemo.desktop show-desktop-icons false
 
@@ -225,9 +226,9 @@ exec_always gsettings set org.nemo.desktop show-desktop-icons false
 # - gaps -
 
 # - gaps inner -
-gaps inner 20
+gaps inner 30
 # - gaps outer -
-gaps outer 30
+gaps outer 40
 
 # - smart gaps -
 smart_gaps on
