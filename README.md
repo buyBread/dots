@@ -5,7 +5,9 @@ my `~/` folder
 - i3lock
 - neofetch
 - zsh
-- termite 
+- urxvt
+- termite
+- openbox
 - tint2
 - feh
 ## screenshot 
