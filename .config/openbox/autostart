@@ -4,22 +4,11 @@
 feh --bg-scale ~/.config/openbox/3.png &
 
 # volti
-volti &
+pa-applet &
+nm-applet &
 
 # tint2
 tint2 &
 
 # mpd
 mpd &
-
-# start the bar
-#sleep 2s && /usr/scripts/toggle-bar.sh &
-
-# set the fonts
-/usr/scripts/fonts.sh &
-
-# disable beeping
-xset -b &
-
-# set the keymap
-setxkbmap us &
