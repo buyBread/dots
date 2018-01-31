@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="menu">
+		<item label="gedit">
+			<action name="Execute">
+				<execute>gedit</execute>
+			</action>
+		</item>
+		<item label="oomox">
+			<action name="Execute">
+				<execute>oomox-gui</execute>
+			</action>
+		</item>
 		<item label="files">
 			<action name="Execute">
 				<execute>nautilus</execute>
@@ -11,20 +21,15 @@
 				<execute>firefox</execute>
 			</action>
 		</item>
-		<item label="oomox">
-			<action name="Execute">
-				<execute>oomox-gui</execute>
-			</action>
-		</item>
+		<!-- This requires the presence of the 'openbox-menu' package to work -->
 		<item label="discord">
 			<action name="Execute">
 				<execute>discord-canary</execute>
 			</action>
 		</item>
-		<!-- This requires the presence of the 'openbox-menu' package to work -->
-		<item label="terminal">
+		<item label="kawanime">
 			<action name="Execute">
-				<execute>termite</execute>
+				<execute>kawanime</execute>
 			</action>
 		</item>
 		<item label="minecraft">
@@ -32,13 +37,11 @@
 				<execute>java -jar ~/Downloads/Minecraft.jar</execute>
 			</action>
 		</item>
-		<item label="text editor">
+		<item label="Xresources">
 			<action name="Execute">
-				<execute>gedit</execute>
+				<execute>xrdb ~/.Xresources</execute>
 			</action>
 		</item>
-		<separator/>
-		<menu execute="openbox-menu -i lxde-applications.menu" id="applications-menu" label="applications"/>
 		<separator/>
 		<menu id="root-menu-72631" label="openbox">
 			<item label="obconf">
