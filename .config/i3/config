@@ -7,7 +7,7 @@
 set $mod Mod1
 
 # - font -
-font pango:GohuFont 8
+font pango:scientifica 8
 
 # - terminal -
 bindsym $mod+Return exec termite
