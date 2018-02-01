@@ -1,9 +1,9 @@
-#define base00 #1d2021
+#define base00 #181E1C
 #define base01 #3c3836
 #define base02 #504945
 #define base03 #665c54
 #define base04 #bdae93
-#define base05 #d6a0bc
+#define base05 #b1b1b1
 #define base06 #ebdbb2
 #define base07 #fbf1c7
 #define base08 #fb4934
@@ -38,20 +38,20 @@
 *color15:      base07
 
 URxvt.cursorBlink  :1
-URxvt.font         :xft:scientifica:size=9
-URxvt.boldFont     :xft:scientifica:size=9
+URxvt.font         :-benis-lemon-medium-r-normal--10-110-75-75-m-50-iso8859-15
+URxvt.boldFont     :-benis-lemon-medium-r-normal--10-110-75-75-m-50-iso8859-15
 
 URxvt.lineSpace           : 0
 URxvt.letterSpace         : 1
 URxvt.scrollBar           : false
 URxvt.internalBorder      : 30
 URxvt.cursorUnderline     : false
-URxvt.geometry            : 102x29
+URxvt.geometry            : 72x26
 URxvt.thickness           : 5
 URxvt.titleBar            : false
 URxvt.intensityStyles     : false
 
 
-URxvt.perl-ext-common : default,matcher
+URxvt.perl-ext-common : default,matcher,selection-to-clipboard
 URxvt.url-launcher    : firefox
 URxvt.matcher.button : 1
