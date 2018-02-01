@@ -4,8 +4,13 @@
 #feh --bg-scale ~/.config/openbox/3.png &
 feh --bg-scale ~/.config/openbox/4.png &
 
-# tint2
-tint2 &
+# - tint2 -
+
+# default
+#tint2 &
+
+# minimalistic
+tint2 -c ~/.config/tint2/minimalistic &
 
 # mpd
 mpd &
