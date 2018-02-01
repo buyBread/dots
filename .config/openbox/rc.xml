@@ -44,7 +44,7 @@
   <theme>
     <name>greynord</name>
     <titleLayout>IMC</titleLayout>
-    <!--2
+    <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
       L: window label (AKA title).
@@ -120,13 +120,12 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>3</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>$---</name>
-      <name>-$--</name>
-      <name>--$-</name>
-      <name>---$</name>
+      <name>any</name>
+      <name>micro</name>
+      <name>chat</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -154,7 +153,7 @@
      cases. -->
   <margins>
     <top>0</top>
-    <bottom>0</bottom>
+    <bottom>30</bottom>
     <left>0</left>
     <right>0</right>
   </margins>
