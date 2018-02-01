@@ -1,14 +1,15 @@
 # walls
 #feh --bg-scale ~/.config/openbox/1.jpg &
 #feh --bg-scale ~/.config/openbox/2.jpg &
-feh --bg-scale ~/.config/openbox/3.png &
-
-# volti
-pa-applet &
-nm-applet &
+#feh --bg-scale ~/.config/openbox/3.png &
+feh --bg-scale ~/.config/openbox/4.png &
 
 # tint2
 tint2 &
 
 # mpd
 mpd &
+
+# applets
+pa-applet &
+nm-applet &
