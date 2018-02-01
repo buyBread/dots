@@ -96,7 +96,7 @@ hide_edge_borders both
 # - bar -
 
 # tint2
-exec --no-startup-id tint2 
+exec --no-startup-id tint2 -c ~/.config/tint2/i3/tint2rc
 exec --no-startup-id nm-applet &
 exec --no-startup-id volti &
 
