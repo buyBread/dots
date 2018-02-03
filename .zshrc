@@ -19,6 +19,7 @@ alias nano="micro"
 alias vim="micro"
 alias music="ncmpcpp"
 alias files="ranger" 
+alias wacom="sudo modprobe wacom"
 
 # ps1
 export PS1='<buybread> @ [%~] '
