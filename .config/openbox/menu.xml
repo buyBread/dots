@@ -43,6 +43,24 @@
 			</action>
 		</item>
 		<separator/>
+		<menu id="root-menu-614219" label="office">
+			<item label="word">
+				<action name="Execute">
+					<execute>lowriter</execute>
+				</action>
+			</item>
+			<item label="powerpoint">
+				<action name="Execute">
+					<execute>loimpress</execute>
+				</action>
+			</item>
+			<item label="excel">
+				<action name="Execute">
+					<execute>localc</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
 		<menu id="root-menu-72631" label="openbox">
 			<item label="obconf">
 				<action name="Execute">
@@ -59,6 +77,11 @@
 			</item>
 		</menu>
 		<separator/>
+		<item label="shut down">
+			<action name="Execute">
+				<execute>shutdown -P</execute>
+			</action>
+		</item>
 		<item label="reboot">
 			<action name="Execute">
 				<execute>reboot</execute>
