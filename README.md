@@ -5,5 +5,5 @@ my `~/` folder
 - tint2
 - feh
 
-![obscreen](https://raw.githubusercontent.com/buyBread/dots/master/screenshots/2018-02-03-202137_1366x768_scrot.png)
+![obscreen](https://raw.githubusercontent.com/buyBread/dots/master/screenshots/2018-02-04-125844_1366x768_scrot.png)
 
