@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>greynord</name>
+    <name>c</name>
     <titleLayout>IMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -120,12 +120,13 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>3</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>any</name>
       <name>micro</name>
       <name>chat</name>
+      <name>art</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
