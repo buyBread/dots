@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # - colors -
-W='\033[0;37m' # Pink
+W='\033[0;37m' # Main Color
 P='\033[0;36m' # White
 NC='\033[0m' # No Color
 
