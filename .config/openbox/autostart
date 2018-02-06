@@ -2,19 +2,35 @@
 #feh --bg-scale ~/.config/openbox/1.jpg &
 #feh --bg-scale ~/.config/openbox/2.jpg &
 #feh --bg-scale ~/.config/openbox/3.png &
-feh --bg-scale ~/.config/openbox/4.png &
+#feh --bg-scale ~/.config/openbox/4.png &
+#feh --bg-scale ~/.config/openbox/5.png &
+#feh --bg-scale ~/artwork/#17232d.jpg &
+#feh --bg-scale ~/.config/openbox/#425154.png &
+feh --bg-scale ~/.config/openbox/6.jpg &
 
-# - tint2 -
+
+# disable beeping
+xset -b &
+
+
+# - tint2 bars -
 
 # default
 #tint2 &
 
 # minimalistic
-tint2 -c ~/.config/tint2/minimalistic &
+#tint2 -c ~/.config/tint2/minimalistic &
+
+# bottom
+tint2 -c ~/.config/tint2/bottom &
+
+#top
+tint2 -c ~/.config/tint2/top &
+
 
 # mpd
 mpd &
 
-# applets
-pa-applet &
-nm-applet &
+
+# volume
+pnmixer &
