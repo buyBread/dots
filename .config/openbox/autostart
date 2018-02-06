@@ -6,7 +6,7 @@
 #feh --bg-scale ~/.config/openbox/5.png &
 #feh --bg-scale ~/artwork/#17232d.jpg &
 #feh --bg-scale ~/.config/openbox/#425154.png &
-feh --bg-scale ~/.config/openbox/6.jpg &
+feh --bg-fill ~/.config/openbox/6.jpg &
 
 
 # disable beeping
