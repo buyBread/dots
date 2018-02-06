@@ -3,8 +3,8 @@ border.width: 0
 # border.color: #ffffff
 *.active.border.color: #f7f8f8
 *.inactive.border.color: #f2f2f2
-padding.height: 15
-padding.width: 8
+padding.height: 16
+padding.width: 10
 
 
 # Menu
