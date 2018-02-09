@@ -6,7 +6,7 @@ SAVEHIST=1000
 
 # aliases
 alias upd='sudo pacman -Syu'
-alias inst='sudo pacman -S'
+alias ins='sudo pacman -S'
 alias del='sudo pacman -R'
 alias delall='alias pacman -Rs'
 alias rstrt='reboot'
@@ -14,6 +14,7 @@ alias lock='bash ~/scripts/lock.sh'
 alias sys='bash ~/scripts/sys.sh'
 alias mclol='java -jar ~/Downloads/Minecraft.jar'
 alias srch="yaourt"
+alias srchins='yaourt -S'
 alias fetchh='neofetch'
 alias ob="cd ~/.config/openbox/"
 alias nano="micro"
