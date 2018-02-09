@@ -45,9 +45,9 @@ wal-scale() {
 }
 
 # wal-fit
-wal-fit() {
+wal-fill() {
     wal -n -i "$@"
-    feh --bg-fit "$(< "${HOME}/.cache/wal/wal")"
+    feh --bg-fill "$(< "${HOME}/.cache/wal/wal")"
 }
 
 
