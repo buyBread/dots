@@ -120,13 +120,15 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>6</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>%---</name>
-      <name>-%--</name>
-      <name>--%-</name>
-      <name>---%</name>
+      <name>%-----</name>
+      <name>-%----</name>
+      <name>--%---</name>
+      <name>---%--</name>
+      <name>----%-</name>
+      <name>-----%</name>
     </names>
     <popupTime>0</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -134,7 +136,7 @@
   </desktops>
   <resize>
     <drawContents>yes</drawContents>
-    <popupShow>Nonpixel</popupShow>
+    <popupShow>Never</popupShow>
     <!-- 'Always', 'Never', or 'Nonpixel' (xterms and such) -->
     <popupPosition>Center</popupPosition>
     <!-- 'Center', 'Top', or 'Fixed' -->
@@ -260,6 +262,16 @@
     <keybind key="A-4">
       <action name="GoToDesktop">
         <to>4</to>
+      </action>
+    </keybind>
+    <keybind key="A-5">
+      <action name="GoToDesktop">
+        <to>5</to>
+      </action>
+    </keybind>
+    <keybind key="A-6">
+      <action name="GoToDesktop">
+        <to>6</to>
       </action>
     </keybind>
     <keybind key="W-d">
