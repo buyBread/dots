@@ -2,27 +2,32 @@
 wal -R
 
 
+
 # disable beeping
 xset -b &
 
 
+
 # - tint2 bars -
 
+
 # default
-#tint2 &
+tint2 &
 
 # minimalistic
 #tint2 -c ~/.config/tint2/minimalistic &
 
 # bottom
-tint2 -c ~/.config/tint2/bottom &
+#tint2 -c ~/.config/tint2/bottom &
 
 #top
-tint2 -c ~/.config/tint2/top &
+#tint2 -c ~/.config/tint2/top &
+
 
 
 # mpd
 mpd &
+
 
 
 # volume
