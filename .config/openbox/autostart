@@ -1,12 +1,5 @@
-# walls
-#feh --bg-scale ~/.config/openbox/1.jpg &
-#feh --bg-scale ~/.config/openbox/2.jpg &
-#feh --bg-scale ~/.config/openbox/3.png &
-#feh --bg-scale ~/.config/openbox/4.png &
-#feh --bg-scale ~/.config/openbox/5.png &
-#feh --bg-scale ~/artwork/#17232d.jpg &
-#feh --bg-scale ~/.config/openbox/#425154.png &
-feh --bg-fill ~/.config/openbox/6.jpg &
+# pywal
+wal -R
 
 
 # disable beeping
