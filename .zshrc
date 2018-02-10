@@ -54,8 +54,3 @@ wal-fill() {
 
 
 # colorschemes
-alias commit='wal-center ~/wall.jpg'
-alias l-lewd='wal-scale ~/l-lewd!!.jpg'
-alias pinky='wal-scale ~/pinky.png'
-alias creepp='wal-scale ~/spook.png'
-
