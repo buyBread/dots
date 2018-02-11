@@ -43,7 +43,7 @@
   </placement>
   <theme>
     <name>c</name>
-    <titleLayout>IMC</titleLayout>
+    <titleLayout>SLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -123,12 +123,12 @@
     <number>6</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>%-----</name>
-      <name>-%----</name>
-      <name>--%---</name>
-      <name>---%--</name>
-      <name>----%-</name>
-      <name>-----%</name>
+      <name>1: ~</name>
+      <name>2: $</name>
+      <name>3: #</name>
+      <name>4: *</name>
+      <name>5: %</name>
+      <name>6: @</name>
     </names>
     <popupTime>0</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -180,6 +180,61 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
+    <!-- Keybindings for rtile -->
+    <keybind key="A-S-e">
+      <action name="Execute">
+        <name>run</name>
+        <command>rtile t</command>
+      </action>
+    </keybind>
+    <keybind key="A-S-d">
+      <action name="Execute">
+        <name>run</name>
+        <command>rtile</command>
+      </action>
+    </keybind>
+    <keybind key="A-S-c">
+      <action name="Execute">
+        <name>run</name>
+        <command>rtile b</command>
+      </action>
+    </keybind>
+    <keybind key="A-S-w">
+      <action name="Execute">
+        <name>run</name>
+        <command>rtile tl</command>
+      </action>
+    </keybind>
+    <keybind key="A-S-s">
+      <action name="Execute">
+        <name>run</name>
+        <command>rtile l</command>
+      </action>
+    </keybind>
+    <keybind key="A-S-x">
+      <action name="Execute">
+        <name>run</name>
+        <command>rtile bl</command>
+      </action>
+    </keybind>
+    <keybind key="A-S-r">
+      <action name="Execute">
+        <name>run</name>
+        <command>rtile tr</command>
+      </action>
+    </keybind>
+    <keybind key="A-S-f">
+      <action name="Execute">
+        <name>run</name>
+        <command>rtile r</command>
+      </action>
+    </keybind>
+    <keybind key="A-S-v">
+      <action name="Execute">
+        <name>run</name>
+        <command>rtile br</command>
+      </action>
+    </keybind>
     <!-- Keybindings for desktop switching -->
     <keybind key="A-d">
       <action name="Execute">
