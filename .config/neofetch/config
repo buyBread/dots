@@ -1,19 +1,11 @@
-#!/usr/bin/env bash
-
 print_info() {
-	prin ""
-	prin ""
-	prin ""
-	prin ""
-	prin ""
-    info "shell" shell
+    prin ""
     info "wm" wm
     info "term" term
-    info "cpu" cpu
-    info "ram" memory
+    info "up" uptime
     info "pkg" packages
-    prin ""
-    info cols
+    info "ram" memory
+#    info cols
 
 }
 
@@ -63,7 +55,7 @@ battery_display="off"
 disk_display="off"
 image_backend="w3m"
 image_source="wallpaper"
-ascii_distro="arch"
+ascii_distro="openbsd_small"
 ascii_colors=(distro)
 ascii_bold="off"
 image_loop="on"
