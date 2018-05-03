@@ -1,6 +1,8 @@
 # pywal
-wal -R
+#wal -R
 
+# wall
+bash ~/.fehbg
 
 
 # disable beeping
