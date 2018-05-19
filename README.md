@@ -2,7 +2,7 @@
   
   
 this is a place where i keep my dotfiles (if that wasn't obvious)  
-###### (half of these are unused cuz i can't compile certain stuff if i'm not on arch)  
+*(half of these are unused cuz i can't compile certain stuff if i'm not on arch)*  
   
   
 `screenshot`  
