@@ -6,7 +6,7 @@ this is a place where i keep my dotfiles (if that wasn't obvious)
   
 `screenshot` 
   
-![ob](https://raw.githubusercontent.com/buyBread/dots/master/screenshots/2018-05-19-192316_1366x768_scrot.png)  
+![ob](https://github.com/buyBread/dots/blob/master/screenshots/2018-05-19-201822_1366x768_scrot.png?raw=true)  
   
   
 `requirements`  
