@@ -1,7 +1,7 @@
 `?`  
   
 this is a place where i keep my dotfiles (if that wasn't obvious)  
-*(half of these are unused cuz i can't compile certain stuff if i'm not on arch)*  
+*(half of these are unused (if i'm on ubuntu) cuz i can't compile certain stuff if i'm not on arch)*  
   
   
 `screenshot` 
@@ -10,9 +10,12 @@ this is a place where i keep my dotfiles (if that wasn't obvious)
   
   
 `shit to install incase i forget lol`  
-* feh
-* tint2
-* openbox
-* gohufont
+* feh & pywal
+* tint2/polybar (openbox/i3)
+* openbox/i3
+* gohufont (ubuntu)
+* phallus-fonts/scientifica & siji (tint2/polybar)
 * dmenu
-* and probably something else idk
+* and probably something else idk  
+
+\>tfw when half of the stuff here is outdated
