@@ -1,36 +1,8 @@
-# pywal
-#wal -R
-
-# wall
-bash ~/.fehbg
-
-
-# disable beeping
-xset -b &
-
-
-
-# - tint2 bars -
-
-
-# default
+# appearance
 tint2 &
-
-# minimalistic
-#tint2 -c ~/.config/tint2/minimalistic &
-
-# bottom
-#tint2 -c ~/.config/tint2/bottom &
-
-#top
-#tint2 -c ~/.config/tint2/top &
-
-
-
-# mpd
+bash .fehbg &
+compton -f &
+# other
+xset -b &
 mpd &
-
-
-
-# volume
-pnmixer &
+bash ~/fonts/install &
