@@ -2,7 +2,9 @@
 tint2 &
 bash .fehbg &
 compton -f &
+xrdb .Xresources
 # other
 xset -b &
 mpd &
 bash ~/fonts/install &
+dunst &
