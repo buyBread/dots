@@ -1,54 +1,57 @@
-bindkey -e
+#define base00 #141414
+#define base01 #3c3836
+#define base02 #504945
+#define base03 #665c54
+#define base04 #bdae93
+#define base05 #b1b1b1
+#define base06 #ebdbb2
+#define base07 #fbf1c7
+#define base08 #fb4934
+#define base09 #fe8019
+#define base0A #fabd2f
+#define base0B #b8bb26
+#define base0C #83a598
+#define base0D #d3869b
+#define base0E #8ec07c
+#define base0F #d65d0e
+
+*foreground:   base05
+*background:   base00
+*cursorColor:  base05
+
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
+
+*color8:       base03
+*color9:       base09
+*color10:      base01
+*color11:      base02
+*color12:      base04
+*color13:      base06
+*color14:      base0F
+*color15:      base07
+
+URxvt.cursorBlink  :1
+URxvt.font         :-artwiz-cure-medium-r-normal--11-110-75-75-p-90-ISO8859-1
+URxvt.boldFont     :-artwiz-cure-medium-r-normal--11-110-75-75-p-90-ISO8859-1
+
+URxvt.lineSpace           : 0
+URxvt.letterSpace         : 1
+URxvt.scrollBar           : false
+URxvt.internalBorder      : 30
+URxvt.cursorUnderline     : false
+URxvt.geometry            : 46x16
+URxvt.thickness           : 5
+URxvt.titleBar            : false
+URxvt.intensityStyles     : false
 
 
-HISTFILE=~/.zsh_history
-HISTSIZE=1000
-SAVEHIST=1000
-
-
-alias upd='sudo pacman -Syu'
-alias ins='sudo pacman -S'
-alias del='sudo pacman -R'
-alias delall='sudo pacman -Rs'
-alias rstrt='reboot'
-alias lock='bash ~/scripts/lock.sh'
-alias sys='bash ~/scripts/sys.sh'
-alias mclol='java -jar ~/Downloads/Minecraft.jar'
-alias srch="yaourt"
-alias srchins='yaourt -S'
-alias inf='neofetch'
-alias i3wm="cd ~/.config/i3/"
-alias nano="micro"
-alias vim="micro"
-alias music="ncmpcpp"
-alias files="ranger" 
-alias wacom="sudo modprobe wacom"
-alias tree="bash ~/scripts/tree.sh"
-alias vbox="sudo modprobe vboxdrv"
-
-
-export PS1='<buybread> @ [%~] '
-
-
-wal-tile() {
-    wal -n -i "$@"
-    feh --bg-tile "$(< "${HOME}/.cache/wal/wal")"
-}
-
-
-wal-center() {
-    wal -n -i "$@"
-    feh --bg-center "$(< "${HOME}/.cache/wal/wal")"
-}
-
-
-wal-scale() {
-    wal -n -i "$@"
-    feh --bg-scale "$(< "${HOME}/.cache/wal/wal")"
-}
-
-
-wal-fill() {
-    wal -n -i "$@"
-    feh --bg-fill "$(< "${HOME}/.cache/wal/wal")"
-}
+URxvt.perl-ext-common : default,matcher,selection-to-clipboard
+URxvt.url-launcher    : opera
+URxvt.matcher.button : 1
