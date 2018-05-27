@@ -7,7 +7,7 @@ padding.width: 7
 # menu
 menu.items.active.bg: Solid Flat
 menu.items.active.bg.color: #283436
-menu.items.active.text.color: #f5b0b1
+menu.items.active.text.color: #b3b1bf
 menu.items.bg: Flat Solid
 menu.items.bg.color: #283436
 menu.items.disabled.text.color: #666
@@ -34,12 +34,12 @@ window.handle.width: 0
 
 # active window
 window.active.*.bg: Solid Flat
-window.active.*.bg.color: #f5b0b1
-window.active.button.*.bg.color: #f5b0b1
+window.active.*.bg.color: #b3b1bf
+window.active.button.*.bg.color: #b3b1bf
 window.active.button.hover.image.color: #283436
 window.active.button.pressed.image.color: #283436
-window.active.button.toggled.image.color: #d99c9d
-window.active.button.unpressed.image.color: #d99c9d
+window.active.button.toggled.image.color: #84809c
+window.active.button.unpressed.image.color: #84809c
 
 
 # inactive window
