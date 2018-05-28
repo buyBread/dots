@@ -1,8 +1,14 @@
+
+#   /^^\  |   | ^^^^^  /^^^\  /^^^  ^^^^^   /^^\  |^^^\  ^^^^^
+#  |____| |   |   |   |     |  ^^\    |    |____| |___/    |
+#  |    |  \_/    |    \___/  ___/    |    |    | |   \    |
+
 # appearance
 tint2 &
-bash .fehbg &
+wal -r &
 compton -f &
-xrdb .Xresources
+xrdb .Xresources &
+
 # other
 xset -b &
 mpd &
