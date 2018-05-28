@@ -19,25 +19,25 @@ alias die="shutdown now"
 
 
 # pywal + feh
--wal-tile() {
--    wal -n -i "$@"
--    feh --bg-tile "$(< "${HOME}/.cache/wal/wal")"
--}
--
--
--wal-center() {
--    wal -n -i "$@"
--    feh --bg-center "$(< "${HOME}/.cache/wal/wal")"
--}
--
--
--wal-scale() {
--    wal -n -i "$@"
--    feh --bg-scale "$(< "${HOME}/.cache/wal/wal")"
--}
--
--
--wal-fill() {
--    wal -n -i "$@"
--    feh --bg-fill "$(< "${HOME}/.cache/wal/wal")"
--}
+wal-tile() {
+    wal -n -i "$@"
+    feh --bg-tile "$(< "${HOME}/.cache/wal/wal")"
+}
+
+
+wal-center() {
+    wal -n -i "$@"
+    feh --bg-center "$(< "${HOME}/.cache/wal/wal")"
+}
+
+
+wal-scale() {
+    wal -n -i "$@"
+    feh --bg-scale "$(< "${HOME}/.cache/wal/wal")"
+}
+
+
+wal-fill() {
+    wal -n -i "$@"
+    feh --bg-fill "$(< "${HOME}/.cache/wal/wal")"
+}
