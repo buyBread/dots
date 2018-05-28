@@ -1,10 +1,11 @@
 print_info() {
     prin ""
-    info "wm" wm
+    prin "void has a cool logo"
     info "term" term
+    info "shell" shell
     info "up" uptime
-    info "pkg" packages
     info "ram" memory
+    prin ""
 #    info cols
 
 }
@@ -34,7 +35,7 @@ disk_subtitle="mount"
 song_shorthand="off"
 install_time="on"
 install_time_format="24h"
-colors=(1 7 7 7 8 9)
+colors=(1 7 7 7 8 2)
 bold="off"
 underline_enabled="on"
 underline_char="─"
@@ -50,12 +51,12 @@ bar_color_elapsed="1"
 bar_color_total="distro"
 cpu_display="off"
 cpu_brand="off"
-memory_display="bar"
+memory_display="text"
 battery_display="off"
 disk_display="off"
-image_backend="w3m"
+image_backend="ascii"
 image_source="wallpaper"
-ascii_distro="openbsd_small"
+ascii_distro="void_small"
 ascii_colors=(distro)
 ascii_bold="off"
 image_loop="on"
