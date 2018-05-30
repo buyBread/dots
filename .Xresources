@@ -7,9 +7,9 @@
 
 ! colorscheme
 ! special
-*.foreground:		#b1b1b1
-*.background:		#0f0f0f
-*.cursorColor:		#b1b1b1
+*.foreground:			#b1b1b1
+*.background:			#0f0f0f
+*.cursorColor:			#b1b1b1
 
 ! black
 *.color0:			#0f0f0f
@@ -43,21 +43,19 @@
 *.color7:			#b3bec1
 *.color15:			#f7f8f8
 
-URxvt.cursorBlink  :1
-URxvt.font         :-benis-lemon-medium-r-normal--10-110-75-75-m-50-ISO10646-1
-URxvt.boldFont     :-benis-lemon-medium-r-normal--10-110-75-75-m-50-ISO10646-1
-
-URxvt.lineSpace           : 0
-URxvt.letterSpace         : 1
-URxvt.scrollBar           : false
-URxvt.internalBorder      : 30
-URxvt.cursorUnderline     : false
-URxvt.geometry            : 46x16
-URxvt.thickness           : 5
-URxvt.titleBar            : false
-URxvt.intensityStyles     : false
-
-
-URxvt.perl-ext-common : default,matcher,selection-to-clipboard
-URxvt.url-launcher    : opera
-URxvt.matcher.button : 1
+! other
+*.cursorBlink			:1
+*.font				:*-*-lemon-*
+*.boldFont			:*-*-lemon-*
+*.lineSpace			: 0
+*.letterSpace			: 1
+*.scrollBar			: false
+*.internalBorder		: 25
+*.cursorUnderline		: true
+*.geometry			: 46x16
+*.thickness			: 5
+*.titleBar			: false
+*.intensityStyles		: false
+*.perl-ext-common		: default,matcher,selection-to-clipboard
+*.url-launcher			: opera
+*.matcher.button		: 1

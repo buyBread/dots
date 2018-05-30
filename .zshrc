@@ -1,3 +1,8 @@
+
+#   ^^/ /^^^ |   | |^^^\  /^^^
+#    /   ^^\ |^^^| |___/ |
+# # /__ ___/ |   | |   \  \___
+
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
@@ -7,16 +12,15 @@ zstyle :compinstall filename '/home/buybread/.zshrc'
 autoload -Uz compinit
 compinit
 
-export PS1='yum <%~> '
-
-# "im lazy"
+export PS1='crossdressing in %~ '
 alias ins="sudo apt-get install"
 alias del="sudo apt-get remove"
 alias upd="sudo apt-get update"
 alias upg="sudo apt-get upgrade"
+alias fix="sudo apt --fix-broken install"
+alias deb="sudo dpkg -i"
 alias re="reboot"
 alias die="shutdown now"
-
 
 # pywal + feh
 wal-tile() {
