@@ -2,4 +2,4 @@
   
 this is my ~/ folder, none of my changes to how I use my desktop are that big, but feel free to use anything you want from here.
   
-![screen](https://files.catbox.moe/xmfbfe.png)  
+![screen](https://files.catbox.moe/hgf4be.png)  
