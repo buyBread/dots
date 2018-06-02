@@ -10,9 +10,10 @@ URGENT_HIGHER=30
 ICON_SUNNY="sunny,"
 ICON_CLOUDY="cloudy,"
 ICON_RAINY="rainy,"
-ICON_STORM="stormy,"
+ICON_STORM="storm,"
 ICON_SNOW="snowy,"
-ICON_FOG="foggy"
+ICON_FOG="foggy,"
+ICON_THUNDER="thunderstorm,"
 
 SYMBOL_CELSIUS=" celsius"
 
@@ -41,6 +42,10 @@ elif [[ "${WEATHER_MAIN}" = *Clear* ]]; then
 elif [[ "${WEATHER_MAIN}" = *Fog* ]] || [[ "${WEATHER_MAIN}" = *Mist* ]]; then
   echo "${ICON_FOG}  ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
 #  echo "${ICON_FOG}  ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
+  echo ""
+elif [[ "${WEATHER_MAIN}" = *Thunderstorm* ]]; then
+  echo "${ICON_THUNDER}  ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
+#  echo "${ICON_THUNDER}  ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
   echo ""
 else
   echo "${WEATHER_MAIN}  ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
