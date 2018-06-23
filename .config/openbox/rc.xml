@@ -242,7 +242,7 @@
     <keybind key="A-Return">
       <action name="Execute">
         <name>run</name>
-        <command>urxvt</command>
+        <command>rxvt-unicode</command>
       </action>
     </keybind>
     <keybind key="A-S-q">
