@@ -56,20 +56,20 @@
     # Draw a line of "separator_height" pixel height between two
     # notifications.
     # Set to 0 to disable.
-    separator_height = 2
+    separator_height = 3
 
     # Padding between text and separator.
-    padding = 8
+    padding = 12
 
     # Horizontal padding.
-    horizontal_padding = 8
+    horizontal_padding = 12
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 5
+    frame_width = 4
 
     # Defines color of the frame around the notification window.
-    frame_color = "#aa8aa0"
+    frame_color = "#71718c"
 
     # Define a color for the separator.
     # possible values are:
@@ -139,7 +139,7 @@
     # Show age of message if message is older than show_age_threshold
     # seconds.
     # Set to -1 to disable.
-    show_age_threshold = 60
+    show_age_threshold = 10
 
     # Split notifications into multiple lines if they don't fit into
     # geometry.
@@ -259,23 +259,23 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#0e0e0e"
-    foreground = "#aa8aa0"
+    background = "#0e1119"
+    foreground = "#71718c"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_normal]
-    background = "#0e0e0e"
-    foreground = "#aa8aa0"
+    background = "#0e1119"
+    foreground = "#71718c"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_critical]
-    background = "#0e0e0e"
-    foreground = "#ae6881"
-    frame_color = "#ae6881"
+    background = "#0e1119"
+    foreground = "#71718c"
+    frame_color = "71719c"
     timeout = 0
     # Icon for notifications with critical urgency, uncomment to enable
     #icon = /path/to/icon
