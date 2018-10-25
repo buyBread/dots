@@ -1,44 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="Openbox 3">
-		<item label="term">
+		<separator/>
+		<item label="&gt; term">
 			<action name="Execute">
-				<execute>rxvt-unicode</execute>
+				<execute>urxvt</execute>
 			</action>
 		</item>
-		<item label="xres">
+		<item label="&gt; www">
 			<action name="Execute">
-				<execute>xrdb .Xresources</execute>
+				<execute>opera</execute>
 			</action>
 		</item>
 		<!-- This requires the presence of the 'openbox-menu' package to work -->
 		<separator/>
-		<menu id="root-menu-91212" label="ob">
-			<item label="reconf">
-				<action name="Reconfigure"/>
-			</item>
-			<item label="obmenu">
-				<action name="Execute">
-					<execute>obmenu</execute>
-				</action>
-			</item>
-			<item label="obconf">
+		<menu id="root-menu-35919" label="* wm">
+			<item label="&gt; obconf">
 				<action name="Execute">
 					<execute>obconf</execute>
 				</action>
 			</item>
+			<item label="&gt; obmenu">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+			<item label="&gt; reconf">
+				<action name="Reconfigure"/>
+			</item>
 		</menu>
 		<separator/>
-		<item label="die">
+		<item label="&gt; exit">
+			<action name="Exit"/>
+		</item>
+		<item label="&gt; restart">
+			<action name="Restart"/>
+		</item>
+		<item label="&gt; shutdown">
 			<action name="Execute">
 				<execute>shutdown now</execute>
 			</action>
 		</item>
-		<item label="re">
-			<action name="Restart"/>
-		</item>
-		<item label="out">
-			<action name="Exit"/>
-		</item>
+		<separator/>
 	</menu>
 </openbox_menu>

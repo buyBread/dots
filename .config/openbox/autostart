@@ -6,12 +6,9 @@
 # appearance
 tint2 &
 wal -r &
-compton -f &
 xrdb .Xresources &
 bash .fehbg &
 
 # other
 xset -b &
 mpd &
-bash ~/fonts/install &
-dunst &

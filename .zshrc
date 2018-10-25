@@ -12,7 +12,7 @@ zstyle :compinstall filename '/home/buybread/.zshrc'
 autoload -Uz compinit
 compinit
 
-export PS1='%~ :: '
+export PS1='%~ + '
 
 alias ins="sudo apt-get install"
 alias del="sudo apt-get remove"
