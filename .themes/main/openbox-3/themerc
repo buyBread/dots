@@ -11,44 +11,22 @@ menu.items.active.bg.color: #050505
 menu.items.active.text.color: #FEE964
 menu.items.bg: Flat Solid
 menu.items.bg.color: #050505
-menu.items.disabled.text.color: #F5D95D
 menu.items.text.color: #BEB367
 menu.border.width: 5
 menu.border.color: #050505
 menu.separator.color: #050505
-menu.title.bg: Solid Flat
-menu.title.bg.color: #050505
-menu.title.text.color: #eee
-menu.title.text.justify: Center
 
 # osd
 
 osd.bg: Solid Flat
-osd.bg.color: #283436
-osd.label.text.color: #283436
+osd.bg.color: #050505
+osd.label.text.color: #FEE964
 
 # windows
 
+window.*.*.bg: Solid Flat
+window.*.*.bg.color: #050505
 window.client.padding.width: 0
 window.handle.width: 0
-
-# active window
-
-window.active.*.bg: Solid Flat
-window.active.*.bg.color: #FFEE87
-window.active.label.text.color: #141414
-window.active.button.*.bg.color: #FFEE87
-window.active.button.hover.image.color: #283436
-window.active.button.pressed.image.color: #283436
-window.active.button.toggled.image.color: #555555
-window.active.button.unpressed.image.color: #555555
-
-# inactive window
-
-window.inactive.*.bg: Solid Flat
-window.inactive.*.bg.color: #BEB367
-window.inactive.label.text.color: #292929
-window.inactive.button.*.bg.color: #BEB367
-window.inactive.button.hover.image.color: #585858
-window.inactive.button.toggled.image.color: #283436
-window.inactive.button.unpressed.image.color: #283436
+window.active.label.text.color: #FEE964
+window.inactive.label.text.color: #BEB367

@@ -44,9 +44,9 @@
 *.color15:			#f7f8f8
 
 ! other
-*.cursorBlink			:1
-*.font				:*-*-lemon-*
-*.boldFont			:*-*-lemon-*
+*.cursorBlink			: 1
+*.font				: xft:cherry:size=8
+*.boldFont			: xft:cherry:size=8
 *.lineSpace			: 0
 *.letterSpace			: 1
 *.scrollBar			: false
