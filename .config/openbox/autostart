@@ -5,7 +5,7 @@
 
 # appearance
 tint2 &
-wal -r &
+wal -R &
 xrdb .Xresources &
 bash .fehbg &
 
