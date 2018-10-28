@@ -1,4 +1,14 @@
- # titlebars
+
+#    /$$     /$$                                                            
+#   | $$    | $$                                                            
+#  /$$$$$$  | $$$$$$$   /$$$$$$  /$$$$$$/$$$$   /$$$$$$   /$$$$$$   /$$$$$$$
+# |_  $$_/  | $$__  $$ /$$__  $$| $$_  $$_  $$ /$$__  $$ /$$__  $$ /$$_____/
+#   | $$    | $$  \ $$| $$$$$$$$| $$ \ $$ \ $$| $$$$$$$$| $$  \__/| $$      
+#   | $$ /$$| $$  | $$| $$_____/| $$ | $$ | $$| $$_____/| $$      | $$      
+#   |  $$$$/| $$  | $$|  $$$$$$$| $$ | $$ | $$|  $$$$$$$| $$      |  $$$$$$$
+#    \___/  |__/  |__/ \_______/|__/ |__/ |__/ \_______/|__/       \_______/
+
+# titlebars
 
 border.width: 0
 padding.height: 4
@@ -11,6 +21,7 @@ menu.items.active.bg.color: #050505
 menu.items.active.text.color: #FEE964
 menu.items.bg: Flat Solid
 menu.items.bg.color: #050505
+menu.items.disabled.text.color: #F5D95D
 menu.items.text.color: #BEB367
 menu.border.width: 5
 menu.border.color: #050505
