@@ -1,5 +1,18 @@
-`?`  
-  
-this is my ~/ folder, none of my changes to how I use my desktop are that big, but feel free to use anything you want from here.
-  
-![screen](https://files.catbox.moe/uwguin.png)  
+<pre align="center">
+  ________      
+ |\   ____\     
+ \ \  \___|_    
+  \ \_____  \   
+ __\|____|\  \  
+ |\__\\________\  
+ \|__||________| 
+         
+</pre>    
+```
+req:
+- feh (wall)
+- pywal (cs)
+- tint2 (bar)
+- openbox (wm)
+```
+![preview](https://files.catbox.moe/uwguin.png)  
