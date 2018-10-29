@@ -19,28 +19,35 @@ background_color = #fee964 100
 
 # panel
 
-panel_items = BC
-panel_size = 148
+panel_items = TBC
+panel_size = 100% 25
 panel_background_id = 1
-panel_padding = 4 3
-panel_margin = 0 10
+panel_padding = 3 3
+panel_margin = 0 0
 panel_layer = bottom
-strut_policy = none
+
+# task
+
+task_text = 1
+task_icon = 0
+task_centered = 1
+task_maximum_size = 130 25
+task_padding = 5 0 0
+task_font = cherry 8
+task_font_color = #beb367 100
+task_active_font_color = #fee964 100
+
+# battery
+
+bat1_format = %p
+bat1_font = cherry 8
+battery_font_color = #fee964 100 
+battery_tooltip = 0
 
 # clock
 
 # h:min - year/month/day
 time1_format = %H:%M - %y/%m/%d 
 time1_font = cherry 8
-clock_font_color = #313131 100
-clock_background_id = 2
-clock_padding = 5 0
-
-# battery
-
-bat1_format = %p
-bat1_font = cherry 8
-battery_font_color = #313131 100 
-battery_background_id = 2
-battery_padding = 3 0
-battery_tooltip = 0
+clock_font_color = #fee964 100
+clock_padding = 4 0

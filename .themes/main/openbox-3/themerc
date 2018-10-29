@@ -18,11 +18,11 @@ padding.width: 7
 
 menu.items.active.bg: Solid Flat
 menu.items.active.bg.color: #050505
-menu.items.active.text.color: #FEE964
+menu.items.active.text.color: #fee964
 menu.items.bg: Flat Solid
 menu.items.bg.color: #050505
-menu.items.disabled.text.color: #F5D95D
-menu.items.text.color: #BEB367
+menu.items.disabled.text.color: #beb367
+menu.items.text.color: #beb367
 menu.border.width: 5
 menu.border.color: #050505
 menu.separator.color: #050505
@@ -31,7 +31,7 @@ menu.separator.color: #050505
 
 osd.bg: Solid Flat
 osd.bg.color: #050505
-osd.label.text.color: #FEE964
+osd.label.text.color: #fee964
 
 # windows
 
@@ -39,5 +39,5 @@ window.*.*.bg: Solid Flat
 window.*.*.bg.color: #050505
 window.client.padding.width: 0
 window.handle.width: 0
-window.active.label.text.color: #FEE964
-window.inactive.label.text.color: #BEB367
+window.active.label.text.color: #fee964
+window.inactive.label.text.color: #beb367
