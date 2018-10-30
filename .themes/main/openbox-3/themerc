@@ -17,27 +17,27 @@ padding.width: 7
 # menu
 
 menu.items.active.bg: Solid Flat
-menu.items.active.bg.color: #050505
-menu.items.active.text.color: #fee964
+menu.items.active.bg.color: #0a090a
+menu.items.active.text.color: #9d9c9f
 menu.items.bg: Flat Solid
-menu.items.bg.color: #050505
-menu.items.disabled.text.color: #beb367
-menu.items.text.color: #beb367
+menu.items.bg.color: #0a090a
+menu.items.disabled.text.color: #7a7a82
+menu.items.text.color: #7a7a82
 menu.border.width: 5
-menu.border.color: #050505
-menu.separator.color: #050505
+menu.border.color: #0a090a
+menu.separator.color: #0a090a
 
 # osd
 
 osd.bg: Solid Flat
-osd.bg.color: #050505
-osd.label.text.color: #fee964
+osd.bg.color: #0a090a
+osd.label.text.color: #9d9c9f
 
 # windows
 
 window.*.*.bg: Solid Flat
-window.*.*.bg.color: #050505
+window.*.*.bg.color: #0a090a
 window.client.padding.width: 0
 window.handle.width: 0
-window.active.label.text.color: #fee964
-window.inactive.label.text.color: #beb367
+window.active.label.text.color: #9d9c9f
+window.inactive.label.text.color: #7a7a82
