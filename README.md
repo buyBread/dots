@@ -15,5 +15,5 @@ req:
 - tint2 (bar)
 - openbox (wm)
 ```
-![preview](https://files.catbox.moe/4e2mul.png)  
+![preview](https://files.catbox.moe/gnk9kh.png)
 
