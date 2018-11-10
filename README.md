@@ -8,12 +8,3 @@
  \|__||________| 
          
 </pre>    
-```
-req:
-- feh (wall)
-- pywal (cs)
-- tint2 (bar)
-- openbox (wm)
-```
-![preview](https://files.catbox.moe/gnk9kh.png)
-

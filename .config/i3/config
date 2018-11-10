@@ -1,0 +1,130 @@
+
+#  ___  ________     
+# |\  \|\_____  \    
+# \ \  \|____|\ /_   
+#  \ \  \    \|\  \  
+#   \ \  \  __\_\  \ 
+#    \ \__\|\_______\
+#     \|__|\|_______|
+
+# wm
+
+set $mod Mod1
+floating_modifier $mod
+font pango: cherry 8
+
+
+# binds
+
+# focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# splits
+bindsym $mod+h split h
+bindsym $mod+v split v
+
+# layout
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# exit
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'exit' -b 'yes' 'i3-msg exit'"
+
+# resize
+mode "resize" {
+        bindsym Left resize shrink width 1 px or 1 ppt
+        bindsym Down resize grow height 1 px or 1 ppt
+        bindsym Up resize shrink height 1 px or 1 ppt
+        bindsym Right resize grow width 1 px or 1 ppt
+        bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+# other
+bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+bindsym $mod+a focus parent
+bindsym $mod+Shift+q kill
+bindsym $mod+Return exec urxvt
+bindsym $mod+Shift+Return exec bash ~/draw_term
+bindsym Print exec scrot -q 100
+bindsym $mod+d exec dmenu_run -l 8 -fn cherry -nb black -sb gray -sf black
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+
+
+# workspaces
+
+set $w1 "% ~ ~ ~ ~"
+set $w2 "~ % ~ ~ ~"
+set $w3 "~ ~ % ~ ~"
+set $w4 "~ ~ ~ % ~"
+set $w5 "~ ~ ~ ~ %"
+
+# goto
+bindsym $mod+1 workspace $w1
+bindsym $mod+2 workspace $w2
+bindsym $mod+3 workspace $w3
+bindsym $mod+4 workspace $w4
+bindsym $mod+5 workspace $w5
+
+# move to
+bindsym $mod+Shift+1 move container to workspace $w1
+bindsym $mod+Shift+2 move container to workspace $w2
+bindsym $mod+Shift+3 move container to workspace $w3
+bindsym $mod+Shift+4 move container to workspace $w4
+bindsym $mod+Shift+5 move container to workspace $w5
+
+
+# colors
+
+# active
+set $activeBorder     "#cfc9cf"
+set $active           "#887888"
+set $activeText       "#0a090a"
+
+# inactive
+set $inactiveBorder   "#9f939f"
+set $inactive         "#594f59"
+set $inactiveText     "#282428"
+
+# class           border            background   text            indicator   child_border
+client.focused    $activeBorder     $active      $activeText     $active     $active
+client.unfocused  $inactiveBorder   $inactive    $inactiveText   $inactive   $inactive
+
+
+# misc
+
+exec xrdb .Xresources
+exec wal -R
+exec_always feh --bg-fill ~/wall.png
+new_window pixel 4
+exec tint2 -c /home/buybread/.config/tint2/i3
+exec_always mpd
+exec compton -c -r 0 -p
+
+
+# gaps
+
+gaps inner 25
+gaps outer 35 
+
+# no gaps when only one window is open
+smart_gaps on
+
+# gap controls
+bindsym $mod+minus        gaps inner all minus 5
+bindsym $mod+plus         gaps inner all plus  5
+bindsym $mod+Shift+minus  gaps outer all minus 5
+bindsym $mod+Shift+plus   gaps outer all plus  5
