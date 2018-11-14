@@ -18,19 +18,15 @@ zstyle :compinstall filename '/home/buybread/.zshrc'
 export PATH="${PATH}:${HOME}/.local/bin/"
 autoload -Uz compinit
 compinit
-export PS1='%~ + '
+export PS1='%{%F{cyan}%}%d %{%F{blue}%}--→%{%f%} '
 
 # aliases
 
-alias ins="sudo apt-get install"
-alias del="sudo apt-get remove"
-alias upd="sudo apt-get update"
 alias upg="sudo apt-get upgrade"
 alias fix="sudo apt --fix-broken install"
 alias deb="sudo dpkg -i"
-alias re="reboot"
 alias die="shutdown now"
-alias mc="bash ~/Downloads/minecraft-launcher-2.1.1431/minecraft-launcher.sh"
+alias micro="~/./micro"
 
 # pywal + feh
 

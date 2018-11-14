@@ -11,7 +11,7 @@
 
 set $mod Mod1
 floating_modifier $mod
-font pango: cherry 8
+font pango: tewi
 
 
 # binds
@@ -66,11 +66,11 @@ bindsym $mod+Shift+r restart
 
 # workspaces
 
-set $w1 "% ~ ~ ~ ~"
-set $w2 "~ % ~ ~ ~"
-set $w3 "~ ~ % ~ ~"
-set $w4 "~ ~ ~ % ~"
-set $w5 "~ ~ ~ ~ %"
+set $w1 "O # # # #"
+set $w2 "# O # # #"
+set $w3 "# # O # #"
+set $w4 "# # # O #"
+set $w5 "# # # # O"
 
 # goto
 bindsym $mod+1 workspace $w1
@@ -112,7 +112,6 @@ exec_always feh --bg-fill ~/wall.png
 new_window pixel 4
 exec tint2 -c /home/buybread/.config/tint2/i3
 exec_always mpd
-exec compton -c -r 0 -p
 
 
 # gaps
