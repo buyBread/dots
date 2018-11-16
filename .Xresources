@@ -47,19 +47,18 @@
 *.color15:			#f7f8f8
 
 ! other
-*.cursorBlink			: 1
-*.font				: xft:cherry:size=8
-*.boldFont			: xft:cherry:size=8
-*.lineSpace			: 0
-*.letterSpace			: 1
-*.scrollBar			: false
-*.internalBorder		: 25
-*.cursorUnderline		: true
-*.geometry			: 46x16
-*.thickness			: 5
-*.titleBar			: false
-*.intensityStyles		: false
-*.perl-ext-common		: default,matcher,selection-to-clipboard
-*.url-launcher			: opera
-*.matcher.button		: 1
-
+*.cursorBlink       : 1
+*.font              : xft:tewi
+*.boldFont          : xft:tewi
+*.lineSpace         : 0
+*.letterSpace       : 1
+*.scrollBar         : false
+*.internalBorder    : 45
+*.cursorUnderline   : true
+*.geometry          : 60x15
+*.thickness         : 5
+*.titleBar          : false
+*.intensityStyles   : false
+*.perl-ext-common   : default,matcher,selection-to-clipboard
+*.url-launcher      : opera
+*.matcher.button    : 1

@@ -42,10 +42,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'exit' -b 'yes' 'i3-msg exit'
 
 # resize
 mode "resize" {
-        bindsym Left resize shrink width 1 px or 1 ppt
-        bindsym Down resize grow height 1 px or 1 ppt
-        bindsym Up resize shrink height 1 px or 1 ppt
-        bindsym Right resize grow width 1 px or 1 ppt
+        bindsym Left resize shrink width 1 px
+        bindsym Down resize grow height 1 px
+        bindsym Up resize shrink height 1 px
+        bindsym Right resize grow width 1 px
         bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
@@ -90,13 +90,13 @@ bindsym $mod+Shift+5 move container to workspace $w5
 # colors
 
 # active
-set $activeBorder     "#cfc9cf"
-set $active           "#887888"
+set $activeBorder     "#739491"
+set $active           "#739491"
 set $activeText       "#0a090a"
 
 # inactive
-set $inactiveBorder   "#9f939f"
-set $inactive         "#594f59"
+set $inactiveBorder   "#71807e"
+set $inactive         "#71807e"
 set $inactiveText     "#282428"
 
 # class           border            background   text            indicator   child_border
@@ -108,7 +108,7 @@ client.unfocused  $inactiveBorder   $inactive    $inactiveText   $inactive   $in
 
 exec xrdb .Xresources
 exec wal -R
-exec_always feh --bg-fill ~/wall.png
+exec_always feh --bg-fill ~/notwall.png
 new_window pixel 4
 exec tint2 -c /home/buybread/.config/tint2/i3
 exec_always mpd

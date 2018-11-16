@@ -9,15 +9,10 @@
 
 # background
 
-# panel
 rounded = 0
 border_width = 1
-background_color = #0a090a 100
-border_color = #594f59 100
-# other
-rounded = 0
-background_color = #887888 100
-background_color_hover = #887888 100
+background_color = #090b0f 100
+border_color = #739491 100
 
 # panel
 
@@ -30,17 +25,17 @@ panel_layer = top
 
 task_text = 1
 task_font = Sans 0
+taskbar_name_font = tewi
+taskbar_name_active_font_color = #739491 100
 taskbar_name = 1
 taskbar_name_padding = 5 0
 taskbar_name_background_id = -1
-taskbar_name_font = tewi
-taskbar_name_active_font_color = #887888 100
 
 # battery
 
 bat1_format = %p
 bat1_font = tewi
-battery_font_color = #887888 100
+battery_font_color = #739491 100
 battery_padding = 2 0
 battery_background_id = 0
 battery_tooltip = 0
@@ -51,6 +46,6 @@ battery_tooltip = 0
 # h:min - year/month/day
 time1_format = %H:%M - %y/%m/%d 
 time1_font = tewi
-clock_font_color = #887888 100
+clock_font_color = #739491 100
 clock_background_id = 0
 clock_padding = 5 0
