@@ -50,6 +50,15 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+# media
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
 # other
 bindsym $mod+f fullscreen toggle
 bindsym $mod+Shift+space floating toggle
@@ -90,13 +99,13 @@ bindsym $mod+Shift+5 move container to workspace $w5
 # colors
 
 # active
-set $activeBorder     "#739491"
-set $active           "#739491"
+set $activeBorder     "#cccccc"
+set $active           "#cccccc"
 set $activeText       "#0a090a"
 
 # inactive
-set $inactiveBorder   "#71807e"
-set $inactive         "#71807e"
+set $inactiveBorder   "#4d4d4d"
+set $inactive         "#4d4d4d"
 set $inactiveText     "#282428"
 
 # class           border            background   text            indicator   child_border
@@ -107,17 +116,16 @@ client.unfocused  $inactiveBorder   $inactive    $inactiveText   $inactive   $in
 # misc
 
 exec xrdb .Xresources
-exec wal -R
-exec_always feh --bg-fill ~/notwall.png
-new_window pixel 4
-exec tint2 -c /home/buybread/.config/tint2/i3
-exec_always mpd
+exec feh --bg-fill ~/notwall.png
+# exec tint2 -c /home/buybread/.config/tint2/i3
+for_window [class=".*"] border none
+for_window [class="URxvt"] border pixel 4
 
 
 # gaps
 
-gaps inner 25
-gaps outer 35 
+gaps inner 45
+gaps outer 65 
 
 # no gaps when only one window is open
 smart_gaps on

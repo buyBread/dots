@@ -18,7 +18,7 @@ zstyle :compinstall filename '/home/buybread/.zshrc'
 export PATH="${PATH}:${HOME}/.local/bin/"
 autoload -Uz compinit
 compinit
-export PS1='%{%F{cyan}%}%d %{%F{blue}%}--→%{%f%} '
+export PS1='%{%F{cyan}%}%~ --→%{%f%} '
 
 # aliases
 

@@ -6,45 +6,42 @@
 !  /$$/\  $$| $$      |  $$$$$$$ /$$$$$$$/|  $$$$$$/|  $$$$$$/| $$      |  $$$$$$$|  $$$$$$$ /$$$$$$$/
 ! |__/  \__/|__/       \_______/|_______/  \______/  \______/ |__/       \_______/ \_______/|_______/ 
 
-! taken from /eti0/dots
-
-! colorscheme
 ! special
-*.foreground:			#b1b1b1
-*.background:			#0f0f0f
-*.cursorColor:			#b1b1b1
+*.foreground:   #cad3db
+*.background:   #090b0d
+*.cursorColor:  #cad3db
 
 ! black
-*.color0:			#0f0f0f
-*.color8:			#617278
+*.color0:       #111416
+*.color8:       #7a9e5d
 
 ! red
-*.color1:			#c1566b
-*.color9:			#f8879f
+*.color1:       #1a1d20
+*.color9:       #c28cda
 
 ! green
-*.color2:			#a7dfa6
-*.color10:			#cae1c9
+*.color2:       #292e32
+*.color10:      #ec538e
 
 ! yellow
-*.color3:			#ed9b8b
-*.color11:			#e1aba1
+*.color3:       #3f474c
+*.color11:      #66b7a8
 
 ! blue
-*.color4:			#8fa4da
-*.color12:			#aeb6d0
+*.color4:       #5c656d
+*.color12:      #429183
 
 ! magenta
-*.color5:			#c6779d
-*.color13:			#d2a9bd
+*.color5:       #7d8a94
+*.color13:      #608a33
 
 ! cyan
-*.color6:			#6776a4
-*.color14:			#8998c7
+*.color6:       #a4b5c2
+*.color14:      #cd79ee
 
 ! white
-*.color7:			#b3bec1
-*.color15:			#f7f8f8
+*.color7:       #dee3e8
+*.color15:      #e682a2
 
 ! other
 *.cursorBlink       : 1
@@ -53,9 +50,9 @@
 *.lineSpace         : 0
 *.letterSpace       : 1
 *.scrollBar         : false
-*.internalBorder    : 45
+*.internalBorder    : 60
 *.cursorUnderline   : true
-*.geometry          : 60x15
+*.geometry          : 65x10
 *.thickness         : 5
 *.titleBar          : false
 *.intensityStyles   : false
