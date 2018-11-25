@@ -45,8 +45,8 @@
 
 ! other
 *.cursorBlink       : 1
-*.font              : xft:tewi
-*.boldFont          : xft:tewi
+*.font              : xft:lucy tewi:size=8
+*.boldFont          : xft:lucy tewi:size=8
 *.lineSpace         : 0
 *.letterSpace       : 1
 *.scrollBar         : false

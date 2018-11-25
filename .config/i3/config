@@ -11,7 +11,7 @@
 
 set $mod Mod1
 floating_modifier $mod
-font pango: tewi
+font pango: lucy tewi 8
 
 
 # binds
@@ -28,7 +28,7 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# splits
+# split
 bindsym $mod+h split h
 bindsym $mod+v split v
 
@@ -38,7 +38,7 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # exit
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'exit' -b 'yes' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'exit x' -b 'yes' 'i3-msg exit'"
 
 # resize
 mode "resize" {
@@ -50,15 +50,6 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-# media
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
-bindsym XF86AudioPlay exec playerctl play
-bindsym XF86AudioPause exec playerctl pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
-
 # other
 bindsym $mod+f fullscreen toggle
 bindsym $mod+Shift+space floating toggle
@@ -68,18 +59,18 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+Return exec bash ~/draw_term
 bindsym Print exec scrot -q 100
-bindsym $mod+d exec dmenu_run -l 8 -fn cherry -nb black -sb gray -sf black
+bindsym $mod+d exec dmenu_run -l 8 -nb black -sb gray -sf black
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 
 # workspaces
 
-set $w1 "O # # # #"
-set $w2 "# O # # #"
-set $w3 "# # O # #"
-set $w4 "# # # O #"
-set $w5 "# # # # O"
+set $w1 "1"
+set $w2 "2"
+set $w3 "3"
+set $w4 "4"
+set $w5 "5"
 
 # goto
 bindsym $mod+1 workspace $w1
@@ -99,28 +90,26 @@ bindsym $mod+Shift+5 move container to workspace $w5
 # colors
 
 # active
-set $activeBorder     "#cccccc"
-set $active           "#cccccc"
+set $active           "#eeeeee"
 set $activeText       "#0a090a"
 
 # inactive
-set $inactiveBorder   "#4d4d4d"
 set $inactive         "#4d4d4d"
 set $inactiveText     "#282428"
 
-# class           border            background   text            indicator   child_border
-client.focused    $activeBorder     $active      $activeText     $active     $active
-client.unfocused  $inactiveBorder   $inactive    $inactiveText   $inactive   $inactive
+# class           border      background   text            indicator   child_border
+client.focused    $active     $active      $activeText     $active     $active
+client.unfocused  $inactive   $inactive    $inactiveText   $inactive   $inactive
 
 
 # misc
 
+exec xset -b
 exec xrdb .Xresources
-exec feh --bg-fill ~/notwall.png
-# exec tint2 -c /home/buybread/.config/tint2/i3
-for_window [class=".*"] border none
-for_window [class="URxvt"] border pixel 4
-
+exec feh --bg-fill ~/wall.png
+# for_window [class=".*"] border none
+# for_window [class="URxvt"] border pixel 4
+for_window [class=".*"] border pixel 4
 
 # gaps
 

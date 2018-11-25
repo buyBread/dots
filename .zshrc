@@ -8,8 +8,6 @@
 #  /$$$$$$$$ /$$$$$$$/| $$  | $$| $$      |  $$$$$$$
 # |________/|_______/ |__/  |__/|__/       \_______/
 
-# general stuff
-
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
@@ -20,13 +18,9 @@ autoload -Uz compinit
 compinit
 export PS1='%{%F{cyan}%}%~ --→%{%f%} '
 
-# aliases
-
-alias upg="sudo apt-get upgrade"
-alias fix="sudo apt --fix-broken install"
-alias deb="sudo dpkg -i"
-alias die="shutdown now"
-alias micro="~/./micro"
+if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+  exec startx /usr/bin/i3
+fi
 
 # pywal + feh
 
