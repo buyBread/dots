@@ -1,3 +1,4 @@
+# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> #
 
 #  ___  ________     
 # |\  \|\_____  \    
@@ -9,118 +10,143 @@
 
 # wm
 
-set $mod Mod1
-floating_modifier $mod
-font pango: lucy tewi 8
+  set $w1 "1"
+  set $w2 "2"
+  set $w3 "3"
+  set $w4 "4"
+  set $w5 "5"
+  set $mod Mod1
+  set $window container
+  floating_modifier $mod
+  font pango: lucy tewi 8
 
+# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> #
 
-# binds
-
-# focus
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-
-# move
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
-
-# split
-bindsym $mod+h split h
-bindsym $mod+v split v
-
-# layout
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
-
-# exit
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'exit x' -b 'yes' 'i3-msg exit'"
-
-# resize
-mode "resize" {
-        bindsym Left resize shrink width 1 px
-        bindsym Down resize grow height 1 px
-        bindsym Up resize shrink height 1 px
-        bindsym Right resize grow width 1 px
-        bindsym Escape mode "default"
-}
-bindsym $mod+r mode "resize"
-
-# other
-bindsym $mod+f fullscreen toggle
-bindsym $mod+Shift+space floating toggle
-bindsym $mod+space focus mode_toggle
-bindsym $mod+a focus parent
-bindsym $mod+Shift+q kill
-bindsym $mod+Return exec urxvt
-bindsym $mod+Shift+Return exec bash ~/draw_term
-bindsym Print exec scrot -q 100
-bindsym $mod+d exec dmenu_run -l 8 -nb black -sb gray -sf black
-bindsym $mod+Shift+c reload
-bindsym $mod+Shift+r restart
-
-
-# workspaces
-
-set $w1 "1"
-set $w2 "2"
-set $w3 "3"
-set $w4 "4"
-set $w5 "5"
-
-# goto
-bindsym $mod+1 workspace $w1
-bindsym $mod+2 workspace $w2
-bindsym $mod+3 workspace $w3
-bindsym $mod+4 workspace $w4
-bindsym $mod+5 workspace $w5
-
-# move to
-bindsym $mod+Shift+1 move container to workspace $w1
-bindsym $mod+Shift+2 move container to workspace $w2
-bindsym $mod+Shift+3 move container to workspace $w3
-bindsym $mod+Shift+4 move container to workspace $w4
-bindsym $mod+Shift+5 move container to workspace $w5
-
-
-# colors
+# appearance
 
 # active
-set $active           "#eeeeee"
-set $activeText       "#0a090a"
+
+  set $active           "#eeeeee"
+  set $activeText       "#0a0a0a"
 
 # inactive
-set $inactive         "#4d4d4d"
-set $inactiveText     "#282428"
 
-# class           border      background   text            indicator   child_border
-client.focused    $active     $active      $activeText     $active     $active
-client.unfocused  $inactive   $inactive    $inactiveText   $inactive   $inactive
+  set $inactive         "#444444"
+  set $inactiveText     "#282828"
 
+# class             border      background   text            indicator   child_border
+
+  client.focused    $active     $active      $activeText     $active     $active
+  client.unfocused  $inactive   $inactive    $inactiveText   $inactive   $inactive
+
+# windows
+
+  # for_window [class=".*"] border none
+  # for_window [class="URxvt"] border pixel 4
+  for_window [class=".*"] border pixel 4
+
+# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> #
 
 # misc
 
-exec xset -b
-exec xrdb .Xresources
-exec feh --bg-fill ~/wall.png
-# for_window [class=".*"] border none
-# for_window [class="URxvt"] border pixel 4
-for_window [class=".*"] border pixel 4
+  assign [class="Opera"] $w1
+  assign [class="discord"] $w1
+  assign [class="Steam"] $ws1
+
+  exec xset -b
+  exec xrdb .Xresources
+  exec feh --bg-fill ~/wall.png
+  exec opera
+  exec discord
+  exec steam
+
+# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> #
 
 # gaps
 
-gaps inner 45
-gaps outer 65 
+  gaps inner 45
+  gaps outer 65 
 
 # no gaps when only one window is open
-smart_gaps on
+
+  smart_gaps on
+
+# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> #
+
+# binds
+
+# window controls
+
+  bindsym $mod+Left focus left
+  bindsym $mod+Down focus down
+  bindsym $mod+Up focus up
+  bindsym $mod+Right focus right
+  bindsym $mod+Shift+Left move left
+  bindsym $mod+Shift+Down move down
+  bindsym $mod+Shift+Up move up
+  bindsym $mod+Shift+Right move right
+
+# split
+
+  bindsym $mod+h split h
+  bindsym $mod+v split v
+
+# layout
+
+  bindsym $mod+s layout stacking
+  bindsym $mod+w layout tabbed
+  bindsym $mod+e layout toggle split
+
+# exit
+
+  bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'exit x' -b 'yes' 'i3-msg exit'"
+
+# resize
+
+  mode "resize" {
+          bindsym Left resize shrink width 1 px
+          bindsym Down resize grow height 1 px
+          bindsym Up resize shrink height 1 px
+          bindsym Right resize grow width 1 px
+          bindsym Escape mode "default"
+  }
+  bindsym $mod+r mode "resize"
 
 # gap controls
-bindsym $mod+minus        gaps inner all minus 5
-bindsym $mod+plus         gaps inner all plus  5
-bindsym $mod+Shift+minus  gaps outer all minus 5
-bindsym $mod+Shift+plus   gaps outer all plus  5
+
+  bindsym $mod+minus        gaps inner all minus 5
+  bindsym $mod+plus         gaps inner all plus  5
+  bindsym $mod+Shift+minus  gaps outer all minus 5
+  bindsym $mod+Shift+plus   gaps outer all plus  5
+
+# goto w
+
+  bindsym $mod+1 workspace $w1
+  bindsym $mod+2 workspace $w2
+  bindsym $mod+3 workspace $w3
+  bindsym $mod+4 workspace $w4
+  bindsym $mod+5 workspace $w5
+
+# move to w
+
+  bindsym $mod+Shift+1 move $window to workspace $w1
+  bindsym $mod+Shift+2 move $window to workspace $w2
+  bindsym $mod+Shift+3 move $window to workspace $w3
+  bindsym $mod+Shift+4 move $window to workspace $w4
+  bindsym $mod+Shift+5 move $window to workspace $w5
+
+# other
+
+  bindsym $mod+f fullscreen toggle
+  bindsym $mod+Shift+space floating toggle
+  bindsym $mod+space focus mode_toggle
+  bindsym $mod+a focus parent
+  bindsym $mod+Shift+q kill
+  bindsym $mod+Return exec urxvt
+  bindsym $mod+Shift+Return exec bash ~/draw_term
+  bindsym Print exec scrot -q 100
+  bindsym $mod+d exec dmenu_run -l 8 -nb black -sb gray -sf black
+  bindsym $mod+Shift+c reload
+  bindsym $mod+Shift+r restart
+
+# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> #
