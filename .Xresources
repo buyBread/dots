@@ -7,41 +7,41 @@
 ! |__/  \__/|__/       \_______/|_______/  \______/  \______/ |__/       \_______/ \_______/|_______/ 
 
 ! special
-*.foreground:   #cad3db
-*.background:   #090b0d
-*.cursorColor:  #cad3db
+*.foreground:   #c5c7bf
+*.background:   #0a0a0d
+*.cursorColor:  #c5c7bf
 
 ! black
-*.color0:       #111416
-*.color8:       #7a9e5d
+*.color0:       #0e0e16
+*.color8:       #1c1c2d
 
 ! red
-*.color1:       #1a1d20
-*.color9:       #c28cda
+*.color1:       #e9546b
+*.color9:       #dc6a7d
 
 ! green
-*.color2:       #292e32
-*.color10:      #ec538e
+*.color2:       #6ee378
+*.color10:      #b8e3a4
 
 ! yellow
-*.color3:       #3f474c
-*.color11:      #66b7a8
+*.color3:       #d4c96c
+*.color11:      #c7dc97
 
 ! blue
-*.color4:       #5c656d
-*.color12:      #429183
+*.color4:       #8099e2
+*.color12:      #99bad2
 
 ! magenta
-*.color5:       #7d8a94
-*.color13:      #608a33
+*.color5:       #aa6ebc
+*.color13:      #c79bd6
 
 ! cyan
-*.color6:       #a4b5c2
-*.color14:      #cd79ee
+*.color6:       #80e9d4
+*.color14:      #97f3e0
 
 ! white
-*.color7:       #dee3e8
-*.color15:      #e682a2
+*.color7:       #8a9aa9
+*.color15:      #c4c4c4
 
 ! other
 *.cursorBlink       : 1

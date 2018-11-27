@@ -51,7 +51,7 @@
 
   assign [class="Opera"] $w1
   assign [class="discord"] $w1
-  assign [class="Steam"] $ws1
+  assign [class="Steam"] $w1
 
   exec xset -b
   exec xrdb .Xresources
@@ -145,7 +145,7 @@
   bindsym $mod+Return exec urxvt
   bindsym $mod+Shift+Return exec bash ~/draw_term
   bindsym Print exec scrot -q 100
-  bindsym $mod+d exec dmenu_run -l 8 -nb black -sb gray -sf black
+  bindsym $mod+d exec dmenu_run -l 1 -nb black -sb gray -sf black -fn "lucy tewi"
   bindsym $mod+Shift+c reload
   bindsym $mod+Shift+r restart
 
