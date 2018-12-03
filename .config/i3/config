@@ -18,7 +18,7 @@
   set $mod Mod1
   set $window container
   floating_modifier $mod
-  font pango: lucy tewi 8
+  font pango: euphon 8
 
 # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> #
 
@@ -55,7 +55,7 @@
 
   exec xset -b
   exec xrdb .Xresources
-  exec feh --bg-fill ~/wall.png
+  exec_always feh --bg-fill ~/walls/wall.png
   exec opera
   exec discord
   exec steam

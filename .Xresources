@@ -45,17 +45,12 @@
 
 ! other
 *.cursorBlink       : 1
-*.font              : xft:lucy tewi:size=8
-*.boldFont          : xft:lucy tewi:size=8
-*.lineSpace         : 0
+*.font              : xft:euphon
+*.boldFont          : xft:euphon
 *.letterSpace       : 1
 *.scrollBar         : false
 *.internalBorder    : 60
 *.cursorUnderline   : true
 *.geometry          : 65x10
-*.thickness         : 5
-*.titleBar          : false
-*.intensityStyles   : false
-*.perl-ext-common   : default,matcher,selection-to-clipboard
+*.perl-ext-common   : selection-to-clipboard
 *.url-launcher      : opera
-*.matcher.button    : 1

@@ -16,7 +16,7 @@ zstyle :compinstall filename '/home/buybread/.zshrc'
 export PATH="${PATH}:${HOME}/.local/bin/"
 autoload -Uz compinit
 compinit
-export PS1='%{%F{cyan}%}%~ %{%F{red}%}-→%{%f%} '
+export PS1='%{%F{cyan}%}%~ %{%f'
 
 if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
   exec startx /usr/bin/i3
