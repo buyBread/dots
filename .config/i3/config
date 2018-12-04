@@ -64,7 +64,7 @@
 
 # gaps
 
-  gaps inner 45
+  gaps inner 35
   gaps outer 65 
 
 # no gaps when only one window is open
@@ -102,12 +102,13 @@
   bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'exit x' -b 'yes' 'i3-msg exit'"
 
 # resize
-
+  
+  set $size 1 px or 1 ppt
   mode "resize" {
-          bindsym Left resize shrink width 1 px
-          bindsym Down resize grow height 1 px
-          bindsym Up resize shrink height 1 px
-          bindsym Right resize grow width 1 px
+          bindsym Left resize shrink width $size
+          bindsym Down resize grow height $size
+          bindsym Up resize shrink height $size
+          bindsym Right resize grow width $size
           bindsym Escape mode "default"
   }
   bindsym $mod+r mode "resize"

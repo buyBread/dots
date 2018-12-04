@@ -8,8 +8,8 @@
 [color]
 
  gradient = 1
- gradient_color_1 = '#191919'
- gradient_color_2 = '#e1e1e1'
+ gradient_color_1 = '#e1e1e1'
+ gradient_color_2 = '#80e9d4'
 
 
 [smoothing]
