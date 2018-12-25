@@ -52,13 +52,15 @@
   assign [class="Opera"] $w1
   assign [class="discord"] $w1
   assign [class="Steam"] $w1
-
-  exec xset -b
-  exec xrdb .Xresources
-  exec_always feh --bg-fill ~/walls/wall.png
   exec opera
   exec discord
   exec steam
+
+  exec xset -b
+  exec xrdb .Xresources
+#  exec tint2
+  exec compton -c -o 0.25 -l 6 -t 6 -r -100
+  exec_always feh --bg-fill ~/walls/wall.png
 
 # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> #
 
@@ -135,6 +137,11 @@
   bindsym $mod+Shift+3 move $window to workspace $w3
   bindsym $mod+Shift+4 move $window to workspace $w4
   bindsym $mod+Shift+5 move $window to workspace $w5
+
+# media keys
+
+  bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+  bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 
 # other
 
