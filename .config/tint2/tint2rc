@@ -1,21 +1,21 @@
 # background 
 
 rounded = 0
-background_color = #c1c1c1 100
+background_color = #060606 100
 
 # panel
 
 panel_items = TC
 panel_layer = top
 panel_background_id = 1
-panel_size = 100% 20
+panel_size = 100% 21
 
 # taskbar 
 
 taskbar_mode = single_desktop
 taskbar_name = 1
-taskbar_name_font = euphon 8
-taskbar_name_active_font_color = #101010 100
+taskbar_name_font = yakuza 8
+taskbar_name_active_font_color = #d9d9d9 100
 taskbar_padding = 0 0 30
 
 # task
@@ -23,15 +23,15 @@ taskbar_padding = 0 0 30
 task_text = 1
 task_centered = 1
 task_align = center
-task_font = euphon 8
-task_font_color = #656565 100
-task_active_font_color = #101010 100
+task_font = yakuza 8
+task_font_color = #999999 100
+task_active_font_color = #d9d9d9 100
 task_maximum_size = 190 25
 task_padding = 0 10 0
 
 # clock
 
 time1_format = %H:%M
-time1_font = euphon 8
-clock_font_color = #101010 100
+time1_font = yakuza 8
+clock_font_color = #d9d9d9 100
 clock_padding = 14 0

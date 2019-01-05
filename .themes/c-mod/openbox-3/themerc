@@ -8,43 +8,51 @@
 #   |  $$$$/| $$  | $$|  $$$$$$$| $$ | $$ | $$|  $$$$$$$| $$      |  $$$$$$$
 #    \___/  |__/  |__/ \_______/|__/ |__/ |__/ \_______/|__/       \_______/
 
+
 # titlebars
 
 border.width: 0
 padding.height: 5
 padding.width: 5
 
+
 # menu
 
 menu.items.active.bg: Solid Flat
-menu.items.active.bg.color: #c1c1c1
+menu.items.active.bg.color: #eeeeee
 menu.items.active.text.color: #101010
 menu.items.bg: Flat Solid
-menu.items.bg.color:#c1c1c1
+menu.items.bg.color: #eeeeee
 menu.items.disabled.text.color: #212121
 menu.items.text.color: #212121
-menu.border.width: 5
-menu.border.color:#c1c1c1
-menu.separator.color: #c1c1c1
+menu.border.width: 10
+menu.border.color: #eeeeee
+menu.separator.color: #eeeeee
+
 
 # osd
 
 osd.bg: Solid Flat
-osd.bg.color: #c1c1c1
+osd.bg.color: #eeeeee
 osd.label.text.color: #101010
+
 
 # windows
 
 # active
+
 window.active.*.bg: Solid Flat
-window.active.*.bg.color: #c1c1c1
+window.active.*.bg.color: #eeeeee
 window.active.*.text.color: #101010
 window.active.*.*.image.color: #101010
+
 # inactive
+
 window.inactive.*.bg: Solid Flat
-window.inactive.*.bg.color: #656565
-window.inactive.*.text.color: #212121
-window.inactive.*.*.image.color: #212121
+window.inactive.*.bg.color: #757575
+window.inactive.*.text.color: #757575
+window.inactive.*.*.image.color: #313131
 # other
+
 window.client.padding.width: 0
 window.handle.width: 0
