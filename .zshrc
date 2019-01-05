@@ -16,10 +16,11 @@ zstyle :compinstall filename '/home/buybread/.zshrc'
 export PATH="${PATH}:${HOME}/.local/bin/"
 autoload -Uz compinit
 compinit
-export PS1='%{%F{cyan}%}%~ %{%f'
+export PS1='%{%F{red}%}%~ %{%f'
 
 if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-  exec startx /usr/bin/i3
+  exec startx /usr/bin/openbox
+  exec xset -b
 fi
 
 # pywal + feh
