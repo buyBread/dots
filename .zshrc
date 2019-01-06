@@ -19,8 +19,7 @@ compinit
 export PS1='%{%F{1}%}%~ %{%f'
 
 if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-  exec startx /usr/bin/openbox
-  exec xset -b
+  exec startx /usr/bin/openbox-session
 fi
 
 # pywal + feh
