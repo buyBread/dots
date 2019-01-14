@@ -8,7 +8,7 @@
 
 ! special
 *.foreground:   #c5c7bf
-*.background:   #0a0a0d
+*.background:   rgba:0000/0000/0200/d100
 *.cursorColor:  #c5c7bf
 
 ! black
@@ -44,12 +44,13 @@
 *.color15:      #c4c4c4
 
 ! other
+*.depth: 32
 *.cursorBlink       : 1
-*.font              : xft:euphon
-*.boldFont          : xft:euphon
-*.letterSpace       : 1
+*.font              : xft:creep:size=10
+*.boldFont          : xft:creep:Bold:size=10
+*.letterSpace       : 3
 *.scrollBar         : false
-*.internalBorder    : 60
+*.internalBorder    : 25
 *.cursorUnderline   : true
 *.geometry          : 65x10
 *.perl-ext-common   : selection-to-clipboard

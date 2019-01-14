@@ -3,3 +3,4 @@ xrdb .Xresources &
 bash .fehbg &
 mpd &
 dunst &
+compton &
