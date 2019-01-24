@@ -1,6 +1,6 @@
 tint2 &
-xrdb .Xresources &
 bash .fehbg &
 mpd &
-dunst &
 compton &
+xset -b &
+cairo-dock &
