@@ -3,4 +3,3 @@ bash .fehbg &
 mpd &
 compton &
 xset -b &
-cairo-dock &

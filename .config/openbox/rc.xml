@@ -42,8 +42,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <cornerRadius>2</cornerRadius>
-    <name>Mistral-Thin-mod</name>
+    <cornerRadius>5</cornerRadius>
+    <name>c-mod</name>
     <titleLayout>LIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -127,8 +127,8 @@
       <name>Net</name>
       <name>Game</name>
       <name>Terminal</name>
-      <name>4</name>
-      <name>5</name>
+      <name>Misc</name>
+      <name>Misc (2)</name>
     </names>
     <popupTime>0</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -739,12 +739,9 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-    <!--    <application class="*">
+    <application class="*">
       <decor>no</decor>
     </application>
-    <application class="discord">
-      <decor>yes</decor>
-    </application> -->
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.
