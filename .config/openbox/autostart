@@ -1,5 +1,0 @@
-tint2 &
-bash .fehbg &
-mpd &
-compton &
-xset -b &

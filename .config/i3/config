@@ -1,160 +1,148 @@
-# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> #
+#
+# -+ i3 +-
+#
 
-#  ___  ________     
-# |\  \|\_____  \    
-# \ \  \|____|\ /_   
-#  \ \  \    \|\  \  
-#   \ \  \  __\_\  \ 
-#    \ \__\|\_______\
-#     \|__|\|_______|
+# alt
+set $mod Mod1
+floating_modifier $mod
 
-# wm
+font pango:SF Mono 10
 
-  set $w1 "1"
-  set $w2 "2"
-  set $w3 "3"
-  set $w4 "4"
-  set $w5 "5"
-  set $mod Mod1
-  set $window container
-  floating_modifier $mod
-  font pango: euphon 8
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
 
-# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> #
+set $resize_size 1
 
-# appearance
+#
+# -+ Binds +-
+#
 
-# active
+bindsym $mod+d exec dmenu_run
 
-  set $active           "#eeeeee"
-  set $activeText       "#0a0a0a"
+bindsym $mod+Shift+q kill
 
-# inactive
+bindsym $mod+Return exec rxvt-unicode
 
-  set $inactive         "#444444"
-  set $inactiveText     "#282828"
+# change focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
 
-# class             border      background   text            indicator   child_border
-
-  client.focused    $active     $active      $activeText     $active     $active
-  client.unfocused  $inactive   $inactive    $inactiveText   $inactive   $inactive
-
-# windows
-
-  # for_window [class=".*"] border none
-  # for_window [class="URxvt"] border pixel 4
-  for_window [class=".*"] border pixel 4
-
-# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> #
-
-# misc
-
-  assign [class="Opera"] $w1
-  assign [class="discord"] $w1
-  assign [class="Steam"] $w1
-  exec opera
-  exec discord
-  exec steam
-
-  exec xset -b
-  exec xrdb .Xresources
-#  exec tint2
-  exec compton -c -o 0.25 -l 6 -t 6 -r -100
-  exec_always feh --bg-fill ~/walls/wall.png
-
-# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> #
-
-# gaps
-
-  gaps inner 35
-  gaps outer 65 
-
-# no gaps when only one window is open
-
-  smart_gaps on
-
-# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> #
-
-# binds
-
-# window controls
-
-  bindsym $mod+Left focus left
-  bindsym $mod+Down focus down
-  bindsym $mod+Up focus up
-  bindsym $mod+Right focus right
-  bindsym $mod+Shift+Left move left
-  bindsym $mod+Shift+Down move down
-  bindsym $mod+Shift+Up move up
-  bindsym $mod+Shift+Right move right
-
-# split
-
-  bindsym $mod+h split h
-  bindsym $mod+v split v
-
-# layout
-
-  bindsym $mod+s layout stacking
-  bindsym $mod+w layout tabbed
-  bindsym $mod+e layout toggle split
-
-# exit
-
-  bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'exit x' -b 'yes' 'i3-msg exit'"
-
-# resize
-  
-  set $size 1 px or 1 ppt
-  mode "resize" {
-          bindsym Left resize shrink width $size
-          bindsym Down resize grow height $size
-          bindsym Up resize shrink height $size
-          bindsym Right resize grow width $size
-          bindsym Escape mode "default"
-  }
-  bindsym $mod+r mode "resize"
-
-# gap controls
-
-  bindsym $mod+minus        gaps inner all minus 5
-  bindsym $mod+plus         gaps inner all plus  5
-  bindsym $mod+Shift+minus  gaps outer all minus 5
-  bindsym $mod+Shift+plus   gaps outer all plus  5
-
-# goto w
-
-  bindsym $mod+1 workspace $w1
-  bindsym $mod+2 workspace $w2
-  bindsym $mod+3 workspace $w3
-  bindsym $mod+4 workspace $w4
-  bindsym $mod+5 workspace $w5
-
-# move to w
-
-  bindsym $mod+Shift+1 move $window to workspace $w1
-  bindsym $mod+Shift+2 move $window to workspace $w2
-  bindsym $mod+Shift+3 move $window to workspace $w3
-  bindsym $mod+Shift+4 move $window to workspace $w4
-  bindsym $mod+Shift+5 move $window to workspace $w5
+# move focused container
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
 
 # media keys
 
-  bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
-  bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%
 
-# other
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
-  bindsym $mod+f fullscreen toggle
-  bindsym $mod+Shift+space floating toggle
-  bindsym $mod+space focus mode_toggle
-  bindsym $mod+a focus parent
-  bindsym $mod+Shift+q kill
-  bindsym $mod+Return exec urxvt
-  bindsym $mod+Shift+Return exec bash ~/draw_term
-  bindsym Print exec scrot -q 100
-  bindsym $mod+d exec dmenu_run -l 1 -nb black -sb gray -sf black -fn "lucy tewi"
-  bindsym $mod+Shift+c reload
-  bindsym $mod+Shift+r restart
+# spotify
+bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+bindsym XF86AudioStop exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop"
+bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
 
-# <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> #
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# switch to workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+
+bindsym $mod+Shift+c reload
+
+bindsym $mod+Shift+r restart
+
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit?' -B 'Yes.' 'i3-msg exit'"
+
+mode "resize" {
+        # resize container binds
+        bindsym Left resize shrink width $resize_size px or $resize_size ppt
+        bindsym Down resize grow height $resize_size px or $resize_size ppt
+        bindsym Up resize shrink height $resize_size px or $resize_size ppt
+        bindsym Right resize grow width $resize_size px or $resize_size ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+#
+# -+ Other +-
+#
+
+for_window [class=".*"] border pixel 0
+
+# colors
+
+set $bg-color            #ffffff
+set $inactive-bg-color   #282828
+set $text-color          #171717
+set $inactive-text-color #ffffff
+set $urgent-bg-color     #282828
+set $indicator-color     #ffffff
+
+# window colors
+#                       # border            # background       # text               # indicator 
+client.focused          $bg-color           $bg-color          $text-color          $indicator-color
+client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color $indicator-color
+client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color $indicator-color
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $indicator-color
+
+exec dunst                # notifications
+exec tint2                # bar
+exec_always bash ~/.fehbg # wallpaper
+
+gaps outer 20
+gaps inner 40
+
+border_radius 8 # rounded borders (resloved/i3)
