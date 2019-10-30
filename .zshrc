@@ -21,7 +21,7 @@ if [[ "$TERM" == (screen*|xterm*|rxvt*) ]]; then
 fi
 
 compinit
-export PS1='%{%F{red}%}%~ %{%F{blue}%}» %{%f'
+export PS1='%{%F{magenta}%}%~ %{%F{blue}%}» %{%f'
 
 if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
   exec startx /usr/bin/openbox-session

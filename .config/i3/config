@@ -95,6 +95,10 @@ bindsym $mod+Shift+4 move container to workspace number $ws4
 bindsym $mod+Shift+5 move container to workspace number $ws5
 bindsym $mod+Shift+6 move container to workspace number $ws6
 
+# screenshot
+bindsym --release $mod+0 exec gnome-screenshot
+bindsym --release $mod+Shift+0 exec gnome-screenshot -a
+
 bindsym $mod+Shift+c reload
 
 bindsym $mod+Shift+r restart
@@ -139,10 +143,12 @@ client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-co
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $indicator-color
 
 exec dunst                # notifications
-exec tint2                # bar
+# exec tint2                # bar
 exec_always bash ~/.fehbg # wallpaper
 
-gaps outer 20
-gaps inner 40
+exec nmcli d connect wlp7s0
 
-border_radius 8 # rounded borders (resloved/i3)
+gaps outer 40
+gaps inner 10
+
+border_radius 6 # rounded borders (resloved/i3)

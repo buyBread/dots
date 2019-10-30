@@ -1,45 +1,45 @@
 ! special
-*.foreground:   #cccccc
-*.background:   #171717
-*.cursorColor:  #cccccc
+*.foreground:   #373b41
+*.background:   #ffffff
+*.cursorColor:  #373b41
 
 ! black
-*.color0:       #222222
-*.color8:       #666666
+*.color0:       #1d1f21
+*.color8:       #969896
 
 ! red
-*.color1:       #e84f4f
-*.color9:       #d23d3d
+*.color1:       #cc6666
+*.color9:       #cc6666
 
 ! green
-*.color2:       #b7ce42
-*.color10:      #bde077
+*.color2:       #b5bd68
+*.color10:      #b5bd68
 
 ! yellow
-*.color3:       #fea63c
-*.color11:      #ffe863
+*.color3:       #f0c674
+*.color11:      #f0c674
 
 ! blue
-*.color4:       #66a9b9
-*.color12:      #aaccbb
+*.color4:       #81a2be
+*.color12:      #81a2be
 
 ! magenta
-*.color5:       #b7416e
-*.color13:      #e16a98
+*.color5:       #b294bb
+*.color13:      #b294bb
 
 ! cyan
-*.color6:       #6d878d
-*.color14:      #42717b
+*.color6:       #8abeb7
+*.color14:      #8abeb7
 
 ! white
-*.color7:       #cccccc
+*.color7:       #c5c8c6
 *.color15:      #ffffff
 
 ! other
 URxvt.depth             : 32
 URxvt.cursorBlink       : 1
-URxvt.font              : xft:SF Mono:Medium:size=12
-URxvt.boldFont          : xft:SF Mono:Semibold:size=12
+URxvt.font              : xft:SF Mono:Medium:size=11
+URxvt.boldFont          : xft:SF Mono:Semibold:size=11
 URxvt.letterSpace       : 0
 URxvt.scrollBar         : false
 URxvt.internalBorder    : 35
