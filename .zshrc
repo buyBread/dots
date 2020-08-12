@@ -21,26 +21,5 @@ if [[ "$TERM" == (screen*|xterm*|rxvt*) ]]; then
 fi
 
 compinit
-export PS1='%{%F{magenta}%}%~ %{%F{blue}%}» %{%f'
 
-if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-  exec startx /usr/bin/openbox-session
-fi
-
-# pywal + feh
-wal-tile() {
-    wal -n -i "$@"
-    feh --bg-tile "$(< "${HOME}/.cache/wal/wal")"
-}
-wal-center() {
-    wal -n -i "$@"
-    feh --bg-center "$(< "${HOME}/.cache/wal/wal")"
-}
-wal-scale() {
-    wal -n -i "$@"
-    feh --bg-scale "$(< "${HOME}/.cache/wal/wal")"
-}
-wal-fill() {
-    wal -n -i "$@"
-    feh --bg-fill "$(< "${HOME}/.cache/wal/wal")"
-}
+export PS1='%{%F{cyan}%}%d/ %{%F{red}%}» %{%f'
