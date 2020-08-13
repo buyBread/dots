@@ -1,5 +1,5 @@
 export PATH="${PATH}:${HOME}/.local/bin/"
-export PS1='%{%F{cyan}%}%d/ %{%F{red}%}» %{%f'
+export PS1='%{%F{cyan}%}%d %{%F{red}%}» %{%f'
 export EDITOR="/usr/bin/micro"
 
 HISTFILE=~/.histfile
@@ -32,3 +32,4 @@ export PF_SEP=":"
 if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
   exec startx /usr/bin/i3
 fi
+cd 
