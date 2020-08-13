@@ -1,50 +1,50 @@
 ! special
-*.foreground:   #373b41
-*.background:   #ffffff
-*.cursorColor:  #373b41
+*.foreground:   #d7d0c7
+*.background:   #151515
+*.cursorColor:  #d7d0c7
 
 ! black
-*.color0:       #1d1f21
-*.color8:       #969896
+*.color0:       #101010
+*.color8:       #404040
 
 ! red
-*.color1:       #cc6666
-*.color9:       #cc6666
+*.color1:       #e84f4f
+*.color9:       #d23d3d
 
 ! green
-*.color2:       #b5bd68
-*.color10:      #b5bd68
+*.color2:       #b8d68c
+*.color10:      #a0cf5d
 
 ! yellow
-*.color3:       #f0c674
-*.color11:      #f0c674
+*.color3:       #e1aa5d
+*.color11:      #f39d21
 
 ! blue
-*.color4:       #81a2be
-*.color12:      #81a2be
+*.color4:       #7dc1cf
+*.color12:      #4e9fb1
 
 ! magenta
-*.color5:       #b294bb
-*.color13:      #b294bb
+*.color5:       #9b64fb
+*.color13:      #8542ff
 
 ! cyan
-*.color6:       #8abeb7
-*.color14:      #8abeb7
+*.color6:       #6d878d
+*.color14:      #42717b
 
 ! white
-*.color7:       #c5c8c6
-*.color15:      #ffffff
+*.color7:       #909090
+*.color15:      #dddddd
 
-! other
-URxvt.depth             : 32
-URxvt.cursorBlink       : 1
-URxvt.font              : xft:SF Mono:Medium:size=11
-URxvt.boldFont          : xft:SF Mono:Semibold:size=11
-URxvt.letterSpace       : 0
-URxvt.scrollBar         : false
-URxvt.internalBorder    : 35
-URxvt.cursorUnderline   : true
-URxvt.geometry          : 78x22
-URxvt.iconFile          : /usr/share/icons/Paper/32x32/apps/bash.png
-URxvt.perl-ext-common   : selection-to-clipboard
-URxvt.url-launcher      : opera
+! font
+URxvt.font        : xft:Fira Mono:Medium:size=11
+URxvt.boldFont    : xft:Fira Mono:Semibold:size=11
+URxvt.letterSpace : 0
+
+! misc
+URxvt.scrollBar       : false
+URxvt.internalBorder  : 15
+URxvt.cursorBlink     : 1
+URxvt.cursorUnderline : true
+URxvt.geometry        : 78x22
+URxvt.perl-ext-common : selection-to-clipboard
+URxvt.url-launcher    : firefox
