@@ -1,0 +1,14 @@
+# disable beep
+xset b off
+
+# bar
+tint2
+
+# compositor
+picom
+
+# screenshot utility
+flameshot
+
+# wallpaper
+bash ~/.fehbg

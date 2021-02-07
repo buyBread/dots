@@ -36,8 +36,7 @@
 *.color15:      #dddddd
 
 ! font
-URxvt.font        : xft:Fira Mono:Medium:size=11
-URxvt.boldFont    : xft:Fira Mono:Semibold:size=11
+URxvt.font        : xft:CozetteVector:size=9
 URxvt.letterSpace : 0
 
 ! misc
