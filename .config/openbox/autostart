@@ -7,8 +7,8 @@ tint2
 # compositor
 picom
 
-# screenshot utility
-flameshot
-
 # wallpaper
 ~/.fehbg
+
+# screenshot utility
+flameshot

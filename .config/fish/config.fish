@@ -1,1 +1,1 @@
-alias prime-run="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia"
+alias nv_prime_offload="vblank_mode=0 primusrun"

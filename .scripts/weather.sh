@@ -7,14 +7,14 @@ CITY_ID="598316"
 URGENT_LOWER=0
 URGENT_HIGHER=30
 
-ICON_SUNNY="sunny,"
-ICON_CLOUDY="cloudy,"
-ICON_RAINY="rainy,"
-ICON_STORM="stormy,"
-ICON_SNOW="snowy,"
-ICON_FOG="foggy"
+ICON_SUNNY="Sunny,"
+ICON_CLOUDY="Cloudy,"
+ICON_RAINY="Rainy,"
+ICON_STORM="Stormy,"
+ICON_SNOW="Snowy,"
+ICON_FOG="Foggy"
 
-SYMBOL_CELSIUS=" celsius"
+SYMBOL_CELSIUS=" Celsius"
 
 WEATHER_URL="http://api.openweathermap.org/data/2.5/weather?id=${CITY_ID}&appid=${API_KEY}&units=metric"
 
