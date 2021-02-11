@@ -2,13 +2,13 @@
 xset b off
 
 # bar
-tint2
+tint2 &
 
 # compositor
-picom
+picom &
 
 # wallpaper
-~/.fehbg
+bash /home/buybread/.fehbg &
 
 # screenshot utility
-flameshot
+flameshot &

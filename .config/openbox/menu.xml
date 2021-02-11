@@ -3,47 +3,42 @@
 	<menu id="root-menu" label="+ menu">
 		<!-- This requires the presence of the 'openbox-menu' package to work -->
 		<separator/>
-		<item label="&gt; term">
+		<item label="Terminal">
 			<action name="Execute">
 				<execute>urxvt</execute>
 			</action>
 		</item>
-		<item label="&gt; net">
+		<item label="Net">
 			<action name="Execute">
 				<execute>firefox</execute>
 			</action>
 		</item>
-		<item label="&gt; chat">
+		<item label="Chat">
 			<action name="Execute">
 				<execute>discord</execute>
 			</action>
 		</item>
-		<item label="&gt; vidya">
-			<action name="Execute">
-				<execute>steam</execute>
-			</action>
-		</item>
-		<item label="&gt; music">
+		<item label="Spotify">
 			<action name="Execute">
 				<execute>spotify</execute>
 			</action>
 		</item>
 		<separator/>
-		<menu id="root-menu-35919" label="* wm">
-			<item label="&gt; obconf">
+		<menu id="root-menu-35919" label="* Openbox">
+			<item label="obconf">
 				<action name="Execute">
 					<execute>obconf</execute>
 				</action>
 			</item>
-			<item label="&gt; reconf">
+			<item label="Reconfigure">
 				<action name="Reconfigure"/>
 			</item>
 		</menu>
 		<separator/>
-		<item label="&gt; logout">
+		<item label="! Logout">
 			<action name="Exit"/>
 		</item>
-		<item label="&gt; poweroff">
+		<item label="! Power Off">
 			<action name="Execute">
 				<execute>systemctl poweroff</execute>
 			</action>
