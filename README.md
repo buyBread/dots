@@ -1,2 +1,2 @@
-### .s
-![ss](https://files.catbox.moe/zdy75g.png)
+### .s  
+![fuckgithub](https://files.catbox.moe/fa0pn7.png)
