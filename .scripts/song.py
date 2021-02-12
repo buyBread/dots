@@ -1,6 +1,3 @@
-#!/bin/bash
-# just kidding, fuck bash
-
 import dbus
 
 try:
@@ -13,8 +10,12 @@ try:
 except dbus.exceptions.DBusException:
     exit()
 
-metadata = spotify_bus_properties.Get("org.mpris.MediaPlayer2.Player", "Metadata")
-playback_status = spotify_bus_properties.Get("org.mpris.MediaPlayer2.Player", "PlaybackStatus")
+metadata = spotify_bus_properties.Get(
+    "org.mpris.MediaPlayer2.Player", "Metadata"
+)
+playback_status = spotify_bus_properties.Get(
+    "org.mpris.MediaPlayer2.Player", "PlaybackStatus"
+)
 
 if metadata["xesam:artist"][0] == "":
     exit()
