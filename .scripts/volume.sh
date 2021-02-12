@@ -1,4 +1,4 @@
-#1/bin/bash
+#!/bin/bash
 
 VOLUME=$(amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }')
 

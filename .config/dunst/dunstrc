@@ -1,0 +1,85 @@
+[global]
+    ### Notification Settings ###
+
+    # show notifications on monitor 0
+    monitor = 0
+
+    # 'monitor = 0' already takes care of this
+    follow = none
+
+    # {width}x{height}-{x}+{y}
+    # passing 0 means making it determine it automatically
+    # based off the size of the notification
+    geometry = "350x0-50+30"
+
+    indicate_hidden = yes
+
+    # full alpha
+    transparency = 0
+
+    # vertical
+    padding = 10
+    horizontal_padding = 10
+    # padding between icons and text
+    text_icon_padding = 8
+
+    separator_color = "#9e9e9e"
+
+    # sort messages by urgency
+    sort = yes
+
+    ### Font and Output ###
+
+    font = SF Mono 10
+    # distance between multiple lines
+    line_height = 2
+    
+    # notification format
+    markup = full
+    format = "<b>%a</b>\n%s\n<i>%b</i>"
+    
+    # text alignment
+    # horizontal
+    alignment = left
+    vertical_alignment = center
+
+    word_wrap = yes
+
+    # don't show the same notification over and over again
+    stack_duplicates = true
+    hide_duplicate_count = false
+
+    icon_position = left
+
+    max_icon_size = 48
+
+    ### Other ###
+
+    browser = /usr/bin/firefox -new-tab
+
+    title = Dunst
+    class = Dunst
+
+    startup_notification = false
+
+    layer = top
+
+    # picom handles compositing
+    corner_radius = 0
+
+### Notification Colors ###
+
+[urgency_low]
+    background = "#eeeeee"
+    foreground = "#000000"
+    timeout = 10
+
+[urgency_normal]
+    background = "#eeeeee"
+    foreground = "#000000"
+    timeout = 10
+
+[urgency_critical]
+    background = "#df5e64"
+    foreground = "#000000"
+    timeout = 0

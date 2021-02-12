@@ -14,7 +14,7 @@ ICON_STORM="Stormy,"
 ICON_SNOW="Snowy,"
 ICON_FOG="Foggy"
 
-SYMBOL_CELSIUS=" Celsius"
+SYMBOL_CELSIUS=" °C"
 
 WEATHER_URL="http://api.openweathermap.org/data/2.5/weather?id=${CITY_ID}&appid=${API_KEY}&units=metric"
 
