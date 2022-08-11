@@ -7,9 +7,11 @@ function fish_prompt
     echo (set_color green)(prompt_pwd)(set_color normal) "\$ "
 end
 
+set -g __fish_git_prompt_showupstream verbose
+set -g __fish_git_prompt_showcolorhints
+
 function fish_right_prompt
-    set_color normal
-    date '+%H:%M:%S'
+    echo (fish_git_prompt) (set_color normal)(date '+%H:%M:%S')
 end
 
 # https://github.com/flatpak/flatpak/issues/3109#issuecomment-1074271891
@@ -21,3 +23,6 @@ if command -vq flatpak
         set -gxa XDG_DATA_DIRS $install_dir/exports/share
     end
 end
+
+# useless to me
+export PYTHONDONTWRITEBYTECODE=1
