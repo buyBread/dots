@@ -1,0 +1,134 @@
+
+#    ______     ______     __    __     ______   __  __    
+#   /\  ___\   /\  __ \   /\ "-./  \   /\  ___\ /\ \_\ \   
+#   \ \ \____  \ \ \/\ \  \ \ \-./\ \  \ \  __\ \ \____ \  
+#    \ \_____\  \ \_____\  \ \_\ \ \_\  \ \_\    \/\_____\ 
+#     \/_____/   \/_____/   \/_/  \/_/   \/_/     \/_____/
+#
+
+# ====
+# CORE
+# ====
+
+# alt key
+set $mod Mod1
+# workspaces
+set $w1 "1: net (>ᴗ•)"
+set $w2 "2: chat (｡•̀ᴗ-)✧"
+set $w3 "3: code ( ˘▽˘)っ♨"
+set $w4 "4: terminal (✧∀✧)"
+set $w5 "5: vidya (￣▽￣)"
+set $w6 "6: music ♪ヽ(^^ヽ)♪"
+# resize size
+set $resize 25
+# nvidia prime offload
+set $nvidia "__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia"
+
+font pango:SF Mono Semibold 10
+floating_modifier $mod
+tiling_drag modifier titlebar
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        bindsym Left resize shrink width $resize px
+        bindsym Down resize grow height $resize px
+        bindsym Up resize shrink height $resize px
+        bindsym Right resize grow width $resize px
+
+        # back to normal
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+gaps outer 10
+gaps inner 20
+
+for_window [class=".*"] border pixel 0
+
+# ====
+# EXEC
+# ====
+
+exec_always picom
+exec_always dunst
+exec_always "bash ~/.fehbg"
+
+# =====
+# BINDS
+# =====
+
+# mostly vanilla
+
+# screenshot
+bindsym Print exec "flameshot gui"
+
+# audio
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
+# spotify
+bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+bindsym XF86AudioStop exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop"
+bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+
+# start a terminal
+bindsym $mod+Return exec kitty
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# start dmenu (a program launcher)
+bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+Shift+d exec rofi -modi drun,run -show drun
+
+# change focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+# move focused window
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+space floating toggle
+
+# switch to workspace
+bindsym $mod+1 workspace number $w1
+bindsym $mod+2 workspace number $w2
+bindsym $mod+3 workspace number $w3
+bindsym $mod+4 workspace number $w4
+bindsym $mod+5 workspace number $w5
+bindsym $mod+6 workspace number $w6
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number $w1
+bindsym $mod+Shift+2 move container to workspace number $w2
+bindsym $mod+Shift+3 move container to workspace number $w3
+bindsym $mod+Shift+4 move container to workspace number $w4
+bindsym $mod+Shift+5 move container to workspace number $w5
+bindsym $mod+Shift+6 move container to workspace number $w6
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+bindsym $mod+r mode "resize"
