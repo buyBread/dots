@@ -39,13 +39,13 @@
 
     ### Font and Output ###
 
-    font = SF Mono 10
+    font = Cantarell 10
     # distance between multiple lines
     line_height = 2
     
     # notification format
     markup = full
-    format = "<b>%a</b>\n<b>%s</b>\n<i>%b</i>"
+    format = "<b>%s</b>\n%b"
     
     # text alignment
     # horizontal
@@ -79,16 +79,16 @@
 ### Notification Colors ###
 
 [urgency_low]
-    background = "#131313CC"
+    background = "#131313FF"
     foreground = "#FBFBFBFF"
     timeout = 5
 
 [urgency_normal]
-    background = "#131313CC"
+    background = "#131313FF"
     foreground = "#FBFBFBFF"
     timeout = 5
 
 [urgency_critical]
-    background = "#6a1519CC"
+    background = "#6a1519FF"
     foreground = "#000000FF"
     timeout = 0

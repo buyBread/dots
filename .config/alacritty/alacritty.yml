@@ -1,0 +1,54 @@
+dynamic_title: true
+
+font:
+  normal:
+    family: Scientifica
+    style: regular
+  bold:
+    family: Scientifica
+    style: bold
+  italic:
+    family: Scientifica
+    style: italic
+
+  size: 11.0
+
+colors:
+  primary:
+    background: "#131313"
+    foreground: "#FBFBFB"
+
+  normal:
+    black:   "#000000"
+    red:     "#FF4F4F"
+    green:   "#66EE4F"
+    yellow:  "#FBEA32"
+    blue:    "#3C5FFB"
+    magenta: "#C65DFB"
+    cyan:    "#50ECEC"
+    white:   "#D7D7D7"
+  bright:
+    black:   "#9C9C9C"
+    red:     "#FF6E90"
+    green:   "#94EE8F"
+    yellow:  "#FBEC78"
+    blue:    "#55C1FB"
+    magenta: "#CFA3FB"
+    cyan:    "#99ECDE"
+    white:   "#FFFFFF"
+
+selection:
+  save_to_clipboard: true
+
+cursor:
+  style:
+    shape: Beam
+    blinking: Always
+
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
+
+window:
+  padding:
+    x: 15
+    y: 15

@@ -3,16 +3,17 @@ set fish_greeting # empty
 set -g fish_prompt_pwd_dir_length 3
 
 function fish_prompt
+    echo (fish_git_prompt) (set_color normal)(date '+%H:%M:%S')
     # `pwd` is full path
-    echo (set_color green)(prompt_pwd)(set_color normal) "\$ "
+    echo (set_color red)(prompt_pwd)(set_color normal) "> "
 end
 
 set -g __fish_git_prompt_showupstream verbose
 set -g __fish_git_prompt_showcolorhints
 
-function fish_right_prompt
-    echo (fish_git_prompt) (set_color normal)(date '+%H:%M:%S')
-end
+#function fish_right_prompt
+#    echo (fish_git_prompt) (set_color normal)(date '+%H:%M:%S')
+#end
 
 # https://github.com/flatpak/flatpak/issues/3109#issuecomment-1074271891
 if command -vq flatpak

@@ -13,16 +13,16 @@
 # alt key
 set $mod Mod1
 # workspaces
-set $w1 "1: net (>ᴗ•)"
-set $w2 "2: chat (｡•̀ᴗ-)✧"
-set $w3 "3: code ( ˘▽˘)っ♨"
-set $w4 "4: terminal (✧∀✧)"
-set $w5 "5: vidya (￣▽￣)"
-set $w6 "6: music ♪ヽ(^^ヽ)♪"
+set $w1 "1: Net"
+set $w2 "2: Chat"
+set $w3 "3: Code"
+set $w4 "4: Corner"
+set $w5 "5: Vidya"
+set $w6 "6: Music"
 # resize size
 set $resize 25
 # nvidia prime offload
-set $nvidia "__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia"
+# set $nvidia "__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia"
 
 font pango:SF Mono Semibold 10
 floating_modifier $mod
@@ -41,7 +41,7 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-gaps outer 10
+gaps outer 0
 gaps inner 20
 
 for_window [class=".*"] border pixel 0
@@ -50,9 +50,23 @@ for_window [class=".*"] border pixel 0
 # EXEC
 # ====
 
+assign [class="Firefox"] $w1
+assign [class="discord"] $w2
+assign [class="code"] $w3
+assign [class="Steam"] $w5
+# coinflip???
+assign [class="spotify"] $w6
+assign [class="Spotify"] $w6
+
 exec_always picom
 exec_always dunst
 exec_always "bash ~/.fehbg"
+
+exec flameshot
+exec "polybar main -r"
+exec "__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia steam"
+exec com.discordapp.Discord
+exec com.spotify.Client
 
 # =====
 # BINDS
@@ -75,7 +89,7 @@ bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer
 bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -115,16 +129,16 @@ bindsym $mod+space floating toggle
 bindsym $mod+1 workspace number $w1
 bindsym $mod+2 workspace number $w2
 bindsym $mod+3 workspace number $w3
-bindsym $mod+4 workspace number $w4
-bindsym $mod+5 workspace number $w5
-bindsym $mod+6 workspace number $w6
+bindsym $mod+8 workspace number $w4
+bindsym $mod+9 workspace number $w5
+bindsym $mod+0 workspace number $w6
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $w1
 bindsym $mod+Shift+2 move container to workspace number $w2
 bindsym $mod+Shift+3 move container to workspace number $w3
-bindsym $mod+Shift+4 move container to workspace number $w4
-bindsym $mod+Shift+5 move container to workspace number $w5
-bindsym $mod+Shift+6 move container to workspace number $w6
+bindsym $mod+Shift+8 move container to workspace number $w4
+bindsym $mod+Shift+9 move container to workspace number $w5
+bindsym $mod+Shift+0 move container to workspace number $w6
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
